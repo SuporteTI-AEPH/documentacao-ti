@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<b>Este projeto visa auxiliar o analista, nas atividades relacionas a infraestrutura da AEPH do Brasil.</b>
+<b>Este projeto visa auxiliar o analista nas atividades relacionadas a infraestrutura da AEPH do Brasil.</b>
 </p>
 
 

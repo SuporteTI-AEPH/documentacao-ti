@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<b>Este projeto visa auxiliar o analista, nas atividades de criação, alteração e removação de contas de e-mails da AEPH do Brasil.</b>
+<b>Este projeto visa auxiliar o analista nas atividades relacionadas aos e-mails da AEPH do Brasil..</b>
 </p>
 
 

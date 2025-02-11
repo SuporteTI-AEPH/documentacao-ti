@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<b>Este projeto visa auxiliar o analista, nas atividades relacionas a atendimentos de chamados da AEPH do Brasil.</b>
+<b>Este projeto visa auxiliar o analista nas atividades relacionadas aos atendimentos de chamados voltados para o T.I da AEPH do Brasil.</b>
 </p>
 
 
