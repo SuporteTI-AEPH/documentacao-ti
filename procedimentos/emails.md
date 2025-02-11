@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<b>Este projeto tem como objetivo, auxiliar o analista em relação ao procedimento de criação, alteração e removação de contas de e-mails da AEPH do Brasil.</b>
+<b>Este projeto visa auxiliar o analista, nas atividades de criação, alteração e removação de contas de e-mails da AEPH do Brasil.</b>
 </p>
 
 
@@ -119,17 +119,13 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 
 
-
-
 <!-- <h1 id="voltar">Voltar para a página principal</h1>
 
 [![backend-simple][BADGE1]](../README.md)-->
 
-- <p style="font-size:20px"> <a href="../README.md"> Voltar para a página principal</a></p>
 
 </div>
 
 
-
-
+- <p style="font-size:20px"> <a href="../README.md"> Voltar para a página principal</a></p>
 
