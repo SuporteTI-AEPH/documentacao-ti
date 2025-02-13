@@ -111,7 +111,7 @@
 
 <br>
 
-1. <p> Ainda em DHCP Server, vá em <b style="color:white; background-color:black">DHCP: New</b>, preecnha as informações com o <b style="color:black; background-color:white">nome da Rede, InterfaceCriada, TempoDeLease, RangedeIPs (criado no passo anterior)</b> e por fim, marque a opção: <b style="color:black; background-color:white">Add ARP For Leases</b>, finalizando com, <b style="color:white; background-color:black">Apply e Ok.</b>
+1. <p> Ainda em DHCP Server, vá em <b style="color:white; background-color:black">DHCP: New</b>, preecnha as informações com o <b style="color:black; background-color:white">nome da Rede, InterfaceCriada, TempoDeLease, PoolDeDHCP (criado no passo anterior)</b> e por fim, marque a opção: <b style="color:black; background-color:white">Add ARP For Leases</b>, finalizando com, <b style="color:white; background-color:black">Apply e Ok.</b>
 </p>
 
 
