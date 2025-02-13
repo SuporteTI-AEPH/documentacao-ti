@@ -27,7 +27,7 @@
 
 <br>
 
-2. <p>Com o download efetuado, coloque o arquivo <b style="color:white; background-color:black">WinBox_Windows.zip</b> onde desejar e realize o processo de unzip. Note que será gerado o aplicativo <b style="color:white; background-color:black">Winbox</b> e já estará disponível para uso. 
+2. <p>Com o download efetuado, coloque o arquivo <b style="color:white; background-color:black">WinBox_Windows.zip</b> onde desejar e realize o processo de unzip. Note que será gerado o aplicativo <b style="color:white; background-color:black">Winbox</b> já disponível para uso. 
 </p>
 
 
@@ -125,7 +125,7 @@
 
 <br>
 
-1. <p> Para criar ou alterar uma conexão PPPoe, vá em <b style="color:white; background-color:black">PPP: INTERFACES</b>, sendo que para criar um novo, clique em <b style="color:white; background-color:black">New</b>, para alterar um já existente, dê duplo click no mesmo, assim preenchendo as informações passadas pela provedora de internet<b style="color:white; background-color:black">Apply, Ok.</b>
+1. <p> Para criar ou alterar uma conexão PPPoe, vá em <b style="color:white; background-color:black">PPP: INTERFACES</b>, sendo que para criar um novo, clique em <b style="color:white; background-color:black">New</b>, para alterar um já existente, dê duplo click no mesmo, assim preenchendo as informações passadas pela provedora de internet, terminando com <b style="color:white; background-color:black">Apply, Ok.</b>
 </p>
 
 
