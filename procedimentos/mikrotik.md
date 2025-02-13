@@ -13,9 +13,11 @@
 - <p style="font-size:20px"> <a href="#winbox">Winbox e o acesso ao Mikrotik</a></p>
 - <p style="font-size:20px"> <a href="#criarrede"> Criação de Interface e Rede</a></p>
 - -  <p style="font-size:15px"> <a href="#criarredelan"> Criação de DHCP para LAN</a></p>
+- -  <p style="font-size:15px"> <a href="#craltpppoe"> Criar ou Alterar Configuração PPPoe</a></p>
 
 
-<h1 id="winbox">📧 Winbox e o acesso ao Mikrotik</h1>
+
+<h1 id="winbox">🧱 Winbox e o acesso ao Mikrotik</h1>
 
 1. <p>Acesse o <a href="https://mikrotik.com/download">Link de Download</a> do <b style="color:white; background-color:black">Winbox</b> e baixe a versão do software de acordo com o seu sistema operacional. 
 </p>
@@ -49,7 +51,7 @@
 
 <br>
 
-<h1 id="criarrede">📧 Criação de Interface e Rede</h1>
+<h1 id="criarrede">🧱 Criação de Interface e Rede</h1>
 
 1. <p>Para criar o tipo de interface, vá em <b style="color:white; background-color:black">Interfaces: Interface: New</b> e selecione o tipo de interface que deseja criar, no caso será <b style="color:white; background-color:black">Ethernet</b>.
 </p>
@@ -99,11 +101,11 @@
 
 <br>
 
-<h2 id="criarredelan"> Criação de DHCP para LAN</h2>
+<h2 id="criarredelan">🧱 Criação de DHCP para LAN</h2>
 
 <br>
 
-1. <p> Para criar um servidor de DHCP para a rede local, vá em <b style="color:white; background-color:black">IP: DHCP Server: Networks</b>, preecnha as informações com os dados que tiver, após finalize com <b style="color:white; background-color:black">Apply, Ok.</b>
+1. <p> Para criar um servidor de DHCP para a rede local, vá em <b style="color:white; background-color:black">IP: DHCP Server: Networks</b>, preencha as informações com os dados que tiver, após finalize com <b style="color:white; background-color:black">Apply, Ok.</b>
 </p>
 
 
@@ -116,6 +118,18 @@
 
 
 <img src="../imagens/procedimentos-img/interface-criacao8.png" alt="Cria rede lan 2">
+
+<br>
+
+<h2 id="craltpppoe">🧱 Criar ou Alterar Configuração PPPoe</h2>
+
+<br>
+
+1. <p> Para criar ou alterar uma conexão PPPoe, vá em <b style="color:white; background-color:black">PPP: INTERFACES</b>, sendo que para criar um novo, clique em <b style="color:white; background-color:black">New</b>, para alterar um já existente, dê duplo click no mesmo, assim preenchendo as informações passadas pela provedora de internet<b style="color:white; background-color:black">Apply, Ok.</b>
+</p>
+
+
+<img src="../imagens/procedimentos-img/pppoe_alteracao1.png" alt="Cria e Altera Conexão PPPoe">
 
 <br>
 
