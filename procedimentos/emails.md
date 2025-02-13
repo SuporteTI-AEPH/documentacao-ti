@@ -14,7 +14,7 @@
 - <p style="font-size:20px"> <a href="#criacao"> Criação de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#alteracao"> Alteração de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#remocao"> Remoção de E-mail</a></p>
-
+- <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
 
 <h1 id="criacao">📧 Criação de E-mail</h1>
 
@@ -113,6 +113,47 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <br>
 
+
+<h1 id="extra">📧 Atividades Extras</h1>
+
+- <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>
+ - <p style="font-size:20px"> <a href="#alteraremailenvio"> Alterar Conta Que Irá Enviar o E-mail no Outlook</a></p>
+<!--- <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>
+- <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>-->
+
+<h2 id="addemailoutlook">📧 Adicionar Outra Conta de E-mail no Outlook</h2>
+
+1.  <p> Com o Outlook aberto, procure pela engrenagem no canto superior direito da tela e clique nela.</p>
+<img src="../imagens/procedimentos-img/add_email_pc_1.png" alt="adicionar outro outlook exemplo1">
+
+<br>
+
+2.  <p> Verifique se está na tela correta de Configurações e dentro da aba Contas. Após confirmação, clique em <b style="color:white; background-color:black">Adicionar Conta</b>. </p>
+<img src="../imagens/procedimentos-img/add_email_pc_2.png" alt="adicionar outro outlook exemplo2">
+
+3.  <p> Uma nova tela irá aparecer, então insira o e-mail a ser adicionado e clique em  <b style="color:white; background-color:black">Continuar</b>. </p>
+<img src="../imagens/procedimentos-img/add_email_pc_3.png" alt="adicionar outro outlook exemplo3">
+
+4.  <p> Agora, será solicitado a senha do e-mail, digite-a e novamente clique em <b style="color:white; background-color:black">Continuar</b>. </p>
+<img src="../imagens/procedimentos-img/add_email_pc_4.png" alt="adicionar outro outlook exemplo4">
+
+5.  <p> Espere um pouco, enquanto o outlook valida as credenciais com o Hostgator, por fim, depois de validado, aperte em <b style="color:white; background-color:black">Continuar</b>. </p>
+<img src="../imagens/procedimentos-img/add_email_pc_5.png" alt="adicionar outro outlook exemplo5">
+
+6.  <p> Por fim, será mostrado uma tela de sucesso de adição de conta. E caso finalizado, basta clicar em <b style="color:white; background-color:black">Terminar</b> ou em <b style="color:white; background-color:black">Aidiconar Outra Conta</b> para colocar um outro e-mail. </p>
+<img src="../imagens/procedimentos-img/add_email_pc_6.png" alt="adicionar outro outlook exemplo6">
+
+7.  <p> Para validar a conta estará em conjunto com a outra na tela de <b style="color:white; background-color:black">Configurações: Contas</b>. </p>
+<img src="../imagens/procedimentos-img/add_email_pc_7.png" alt="adicionar outro outlook exemplo7">
+
+<br>
+
+<h2 id="alteraremailenvio">📧 Alterar Conta Que Irá Enviar o E-mail no Outlook</h2>
+
+1.  <p> Para enviar o e-mail de um outlook, que tem mais de uma conta cadastrada. Vá em novo e-mail, clique onde está o e-mail de remetente que irá aparecer o outro e-mail.
+<img src="../imagens/procedimentos-img/add_email_pc_8.png" alt="adicionar outro outlook exemplo8">
+
+
 <div>
 
 [BADGE1]: https://img.shields.io/badge/Página_principal-000?style=for-the-badge&logo=html
@@ -127,5 +168,10 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 </div>
 
 
-- <p style="font-size:20px"> <a href="../README.md"> Voltar para a página principal</a></p>
+<br>
 
+- <p style="font-size:20px"> <a href="#"> Voltar ao Topo</a></p>
+
+<br>
+
+- <p style="font-size:20px"> <a href="../README.md"> Voltar para a página principal</a></p>

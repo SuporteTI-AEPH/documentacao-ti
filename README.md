@@ -33,7 +33,11 @@
 </div>
 
 <!-- 
-<h2 id="license">License 📃 </h2>
+<br>
 
-This project is under [MIT](./LICENSE) license
+- <p style="font-size:20px"> <a href="#"> Voltar ao Topo</a></p>
+
+<br>
+
+- <p style="font-size:20px"> <a href="../README.md"> Voltar para a página principal</a></p>
 -->
