@@ -14,6 +14,9 @@
 - <p style="font-size:20px"> <a href="#criarrede"> Criação de Interface e Rede</a></p>
 - -  <p style="font-size:15px"> <a href="#criarredelan"> Criação de DHCP para LAN</a></p>
 - -  <p style="font-size:15px"> <a href="#craltpppoe"> Criar ou Alterar Configuração PPPoe</a></p>
+- <p style="font-size:20px"> <a href="#regranatfw"> Criação de Regras: NAT e Firewall</a></p>
+- -  <p style="font-size:15px"> <a href="#criarnat"> Criação de Regra: NAT</a></p>
+- -  <p style="font-size:15px"> <a href="#criarfw"> Criação de Regra: Firewall</a></p>
 
 
 
@@ -130,6 +133,56 @@
 
 
 <img src="../imagens/procedimentos-img/pppoe_alteracao1.png" alt="Cria e Altera Conexão PPPoe">
+
+<br>
+
+<h1 id="criarrede">🧱 Criação de Interface e Rede</h1>
+
+1. <p>Para criar o tipo de interface, vá em <b style="color:white; background-color:black">Interfaces: Interface: New</b> e selecione o tipo de interface que deseja criar, no caso será <b style="color:white; background-color:black">Ethernet</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/interface-criacao1.png" alt="Cria rede1">
+
+<br>
+
+<h1 id="regranatfw">🧱 Criação de Regras: NAT e Firewall</h1>
+
+<h2 id="criarnat">🧱 Criação de Regra: NAT</h2>
+
+1. <p>Para criar um NAT de tipo <b style="color:white; background-color:black"> SRCNAT</b>, vá em <b style="color:white; background-color:black">IP: Firewall: NAT: New</b>, expanda os campos de <b style="color:black; background-color:white">General e Action</b>, preenchendo com seguintes dados: <b style="color:white; background-color:black">NomeDaRegra, srcnat, Interface (Com WAN configurada), SRC-NAT e o IPdaInterface </b>, terminando com um <b style="color:white; background-color:black">Apply, OK</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/criar_nat1.png" alt="Cria nat1">
+
+<br>
+
+2. <p>Para criar um NAT de tipo <b style="color:white; background-color:black"> MASQUERADE</b>, vá em <b style="color:white; background-color:black">IP: Firewall: NAT: New</b>, expanda os campos de <b style="color:black; background-color:white">General e Action</b>, utilize as seguintes informações: <b style="color:white; background-color:black">NomeDaRegra, srcnat, Interface (Com WAN configurada), Masquerade</b> e finalizando com <b style="color:white; background-color:black">Apply, OK</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/criar_nat1.png" alt="Cria nat2">
+
+<br>
+
+3. <p>Agora, para criar um NAT de tipo <b style="color:white; background-color:black"> DSTNAT</b>, abra a mesma aba de criação de NAT, expandindo também os campos de <b style="color:black; background-color:white">General e Action</b>, preenchendo os campos sinalizados com: <b style="color:white; background-color:black">NomeDaRegra, dstnat, IPdeOrigem (de onde está vindo a requisição de acesso), Protocolo, PortaQueEstáChegandoARequisição, dst-nat, IPInterno (IP que irá receber o acesso)</b>. No último campo, se preferir pode definir uma porta que será redirecionado o acesso. E assim, finalizando com <b style="color:white; background-color:black">Apply, OK</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/criar_nat3.png" alt="Cria nat3">
+
+<br>
+
+<h2 id="criarfw">🧱 Criação de Regra: Firewall</h2>
+
+<br>
+
+1. <p>Para criar o tipo de interface, vá em <b style="color:white; background-color:black">Interfaces: Interface: New</b> e selecione o tipo de interface que deseja criar, no caso será <b style="color:white; background-color:black">Ethernet</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/.png" alt="Cria regra1">
 
 <br>
 
