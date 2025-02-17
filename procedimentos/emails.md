@@ -14,7 +14,8 @@
 - <p style="font-size:20px"> <a href="#criacao"> Criação de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#alteracao"> Alteração de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#remocao"> Remoção de E-mail</a></p>
-- <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
+- <p style="font-size:20px"> <a href="#backuphostgator"> Criação de Backup: E-mails (Hostgator)</a></p>
+- - <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
 
 <h1 id="criacao">📧 Criação de E-mail</h1>
 
@@ -113,8 +114,45 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <br>
 
+<h1 id="backuphostgator">📧 Criação de Backup: E-mails (Hostgator)</h1>
 
-<h1 id="extra">📧 Atividades Extras</h1>
+1. <p>Na tela principal do cPanel, procure por Arquivos e selecione: <b style="color:white; background-color:black">Gerenciador de Arquivos</b>. 
+</p>
+<img src="../imagens/procedimentos-img/bkp_email1.png" alt="criação de backup email1">
+
+<br>
+
+2. <p>Com a tela de Gerenciamento de Arquivos aberta, na barra de busca, procure por <b style="color:white; background-color:black">mail</b> ou procure pela listagem de pastas e clique nela. 
+</p>
+<img src="../imagens/procedimentos-img/bkp_email2.png" alt="criação de backup email2">
+
+<br>
+
+3. <p>Na pasta com os e-mails, procure pela conta que deseja criar o backup, após clique em <b style="color:white; background-color:black">compactar</b> no canto superior direito. 
+</p>
+<img src="../imagens/procedimentos-img/bkp_email3.png" alt="criação de backup email3">
+
+<br>
+
+4. <p>Será aberto uma janela com opções de Compactação, selecione o formato que quiser, confirme o caminho em que será salvo o backup. Terminando com <b style="color:white; background-color:black">Compress File</b>.
+</p>
+<img src="../imagens/procedimentos-img/bkp_email4.png" alt="criação de backup email4">
+
+<br>
+
+5. <p>Após finalizado o processo, clique em <b style="color:white; background-color:black">Close.</b>.
+</p>
+<img src="../imagens/procedimentos-img/bkp_email5.png" alt="criação de backup email5">
+
+<br>
+
+6. <p>Localize o arquivo compactado, clique nele e após selecione <b style="color:white; background-color:black">Baixar.</b> no topo da página. Assim o backup será baixado para a sua máquina.Assim o backup será baixado para a sua máquina.
+</p>
+<img src="../imagens/procedimentos-img/bkp_email6.png" alt="criação de backup email6">
+
+<br>
+
+<h2 id="extra">📧 Atividades Extras</h2>
 
 - <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>
  - <p style="font-size:20px"> <a href="#alteraremailenvio"> Alterar Conta Que Irá Enviar o E-mail no Outlook</a></p>
