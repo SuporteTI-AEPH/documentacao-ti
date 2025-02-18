@@ -146,7 +146,7 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <br>
 
-6. <p>Localize o arquivo compactado, clique nele e após selecione <b style="color:white; background-color:black">Baixar.</b> no topo da página. Assim o backup será baixado para a sua máquina.Assim o backup será baixado para a sua máquina.
+6. <p>Localize o arquivo compactado, clique nele e após selecione <b style="color:white; background-color:black">Baixar.</b> no topo da página. Assim o backup será baixado para a sua máquina.
 </p>
 <img src="../imagens/procedimentos-img/bkp_email6.png" alt="criação de backup email6">
 
