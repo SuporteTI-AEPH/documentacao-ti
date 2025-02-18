@@ -128,7 +128,7 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <br>
 
-3. <p>Na pasta com os e-mails, procure pela conta que deseja criar o backup, após clique em <b style="color:white; background-color:black">compactar</b> no canto superior direito. 
+3. <p>Na pasta com os e-mails, procure pela conta (ou pasta) que deseja criar o backup, após clique em <b style="color:white; background-color:black">compactar</b> no canto superior direito. 
 </p>
 <img src="../imagens/procedimentos-img/bkp_email3.png" alt="criação de backup email3">
 
@@ -152,7 +152,7 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <br>
 
-<h2 id="extra">📧 Atividades Extras</h2>
+<h1 id="extra">📧 Atividades Extras</h1>
 
 - <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>
  - <p style="font-size:20px"> <a href="#alteraremailenvio"> Alterar Conta Que Irá Enviar o E-mail no Outlook</a></p>

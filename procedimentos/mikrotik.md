@@ -16,7 +16,7 @@
 - -  <p style="font-size:15px"> <a href="#craltpppoe"> Criar ou Alterar Configuração PPPoe</a></p>
 - <p style="font-size:20px"> <a href="#regranatfw"> Criação de Regras: NAT e Firewall</a></p>
 - -  <p style="font-size:15px"> <a href="#criarnat"> Criação de Regra: NAT</a></p>
-- -  <p style="font-size:15px"> <a href="#criarfw"> Criação de Regra: Firewall</a></p>
+- -  <p style="font-size:15px"> <a href="#criarfw"> Criação de Regra: Filter Rule (Firewall)</a></p>
 
 
 
@@ -174,17 +174,25 @@
 
 <br>
 
-<h2 id="criarfw">🧱 Criação de Regra: Firewall</h2>
+<h2 id="criarfw">🧱 Criação de Regra: Filter Rule (Firewall)</h2>
 
 <br>
 
-1. <p>Para criar o tipo de interface, vá em <b style="color:white; background-color:black">Interfaces: Interface: New</b> e selecione o tipo de interface que deseja criar, no caso será <b style="color:white; background-color:black">Ethernet</b>.
+-  Para criação de regras de firewall, utilizamos três tipos de Chain:
+
+- - Forward - para pacotes que passam pelo roteador;
+- - Input - pacotes que entram pelo roteador passando por uma das interfaces, com IP de destino sendo um dos endereços do mikrotik;
+- - Output - para pacote originados do roteador que vão sair por uma das interfaces. 
+
+1. <p>Para criar uma regra, vá em <b style="color:white; background-color:black">IP: Firewall: Filter Rules: New</b> marque os campos, <b style="color:black; background-color:white">General: Action</b> e coloque: <b style="color:white; background-color:black"> NomeRegra, Chain, SrcAddress, Protocolo, SrcPort</b> e confirme que a ação está como <b style="color:white; background-color:black">Accept</b>, por fim, aplique e dê Ok.
+- - Para criar a regra como objetivo de liberar o acesso externamente, basta utilizar a Chain como Output e utilizar os campos de Dst. Além disso, é possível também, utilizar listas de IPs ou as interfaces diretamente.
 </p>
 
 
-<img src="../imagens/procedimentos-img/.png" alt="Cria regra1">
+<img src="../imagens/procedimentos-img/criar_regra1.png" alt="Cria regra1">
 
 <br>
+
 
 <div>
 
