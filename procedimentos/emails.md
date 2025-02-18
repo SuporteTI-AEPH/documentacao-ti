@@ -15,6 +15,7 @@
 - <p style="font-size:20px"> <a href="#alteracao"> Alteração de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#remocao"> Remoção de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#backuphostgator"> Criação de Backup: E-mails (Hostgator)</a></p>
+- <p style="font-size:20px"> <a href="#limpezahostgator"> Limpeza de E-mail (Hostgator)</a></p>
 - - <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
 
 <h1 id="criacao">📧 Criação de E-mail</h1>
@@ -151,6 +152,35 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 <img src="../imagens/procedimentos-img/bkp_email6.png" alt="criação de backup email6">
 
 <br>
+
+<h1 id="limpezahostgator">📧 Limpeza de E-mail (Hostgator)</h1>
+
+1. <p>Na tela principal do <b style="color:white; background-color:black">CPanel</b>, procure pelo campo de <b style="color:white; background-color:black">Email</b> e selecione a opção: <b style="color:white; background-color:black">Contas de Email</b></p>
+
+
+<img src="../imagens/procedimentos-img/criar_email1.png" alt="Criacao de email exemplo1">
+
+<br>
+
+2. <p>Agora procure pelo e-mail que terá os arquivos limpados e clique em: <b style="color:white; background-color:black">Gerenciar</b>. 
+</p>
+<img src="../imagens/procedimentos-img/limpar_email1.png" alt="limpeza de  email1">
+
+<br>
+
+3. <p>Certifique que está dentro da contra correta, após isso clique em: <b style="color:white; background-color:black">Alterar Armazenamento</b> no canto direito da tela, dentro de Eu Preciso Fazer.. 
+</p>
+<img src="../imagens/procedimentos-img/limpar_email2.png" alt="limpeza de  email2">
+
+<br>
+
+4. <p>Verifique novamente se está dentro do e-mail correto, após, veja a pasta que será efetuada a limpeza, neste caso será a de Inbox, continue clicando em: <b style="color:white; background-color:black">Manage</b>. Com isso, será mostrado algumas opções, então selecione a que desejar. Finalize o processo de limpeza com, <b style="color:white; background-color:black">Deletar Permanentemente</b> e será mostrado uma mensagem de ação executada com sucesso.. 
+</p>
+<img src="../imagens/procedimentos-img/limpar_email3.png" alt="limpeza de  email3">
+<img src="../imagens/procedimentos-img/limpar_email4.png" alt="limpeza de  email4">
+
+<br>
+
 
 <h1 id="extra">📧 Atividades Extras</h1>
 
