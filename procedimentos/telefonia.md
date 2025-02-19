@@ -15,7 +15,7 @@
 
 <h1 id="VoIPs">☎️ Configuração de VoIP</h1>
 
-1. <p>No telefone, clique em MENU e procure por STATUS, dê ENTER e novamente em NETWORK STATUS. Procure pelo IP que o telefone recebeu, pois vamos precisar dessa informação para fazer a configuração do ramal.
+1. <p>No telefone, clique em MENU e procure por STATUS, dê ENTER e mais vez em NETWORK STATUS. Agora desça pelas informações até localizar o IP que o telefone recebeu e guarde essa informação, pois vamos precisar dela para realizar a configuração do ramal.
 </p>
 
 <br>
