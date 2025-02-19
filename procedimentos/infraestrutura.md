@@ -7,20 +7,6 @@
 </p>
 
 
-<div>
-
-[BADGE1]: https://img.shields.io/badge/Página_principal-000?style=for-the-badge&logo=html
-
-
-
-<!-- <h1 id="voltar">Voltar para a página principal</h1>
-
-[![backend-simple][BADGE1]](../README.md)-->
-
-
-</div>
-
-
 <br>
 
 - <p style="font-size:20px"> <a href="#"> Voltar ao Topo</a></p>

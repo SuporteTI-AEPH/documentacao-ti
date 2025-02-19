@@ -18,21 +18,7 @@
 1. <p>Caso a impressão esteja com muitas falhas, vá em fila de impressão e procure por <b style="color:white; background-color:black">Preferências de Impressão: Manutenção</b> e rode <b style="color:white; background-color:black">Alinhamento do Cabeçote (uma ou duas vezes), Limpeza do Cabeçote de Impressão (duas vezes ou mais, sem imprimir a página de testes entre os procedimentos)</b>, com cada passo finalizado, rode a impressão da página de testes e verifique a qualidade. Caso ainda apresente problemas, repita o processo de Limpeza.
 </p>
 
-<img src="../imagens/procedimentos-img/impressora1.png" alt=" impressora1">
-
-<div>
-
-[BADGE1]: https://img.shields.io/badge/Página_principal-000?style=for-the-badge&logo=html
-
-
-
-<!-- <h1 id="voltar">Voltar para a página principal</h1>
-
-[![backend-simple][BADGE1]](../README.md)-->
-
-
-</div>
-
+<img src="../imagens/procedimentos-img/impressora1.png" alt="impressora1">
 
 <br>
 
