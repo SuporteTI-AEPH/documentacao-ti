@@ -10,8 +10,66 @@
 
 <h1 id="conteudo" style="font-size:35px;">📝 Conteúdo</h1>
 
+<!-- - <p style="font-size:20px"> <a href="#criartronco"> Criação de Tronco: Asterisk</a></p> -->
+- <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
+- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
 
+
+<h1 id="acessopabx">🖥 Acesso ao PABX: Asterisk</h1>
+
+1. <p>Para acessar o PABX, basta ir no cmd (ou qualquer ferramenta de linha de comando) e logar no <b>10.0.0.31</b> com o usuário root, neste caso do cmd do windows, utilizamos: <b style="color:white; background-color:black">ssh root@10.0.0.31</b>. A senha está armazenada no keepass.
+</p>
+
+<img src="../imagens/procedimentos-img/acesso_pabx1.png" alt="Acesso PABX1">
+
+<br>
+
+
+<h1 id="criarramal">🖥 Criação Ramal: Asterisk</h1>
+
+1. <p>Dentro do PABX, vá até a pasta de configuração do Asterisk com o comando: <b style="color:white; background-color:black">cd /etc/asterisk</b>, após rode o comando: <b style="color:white; background-color:black">nano sip.conf</b> para editarmos o arquivo de configuração de Tronco/Ramais. (É possível também alterar o arquivo com o editor <b>VIM</b>)
+</p>
+
+<img src="../imagens/procedimentos-img/criar_userramal1.png" alt="Criar ramal1">
+
+<br>
+
+
+
+2. <p>No arquivo de configuração, adicione um novo ramal seguindo a configuração abaixo: 
+<i>
+
+	[NumeroRamal]
+	type=friend
+	username=NumeroRamal
+	secret=NumeroRamal
+	disallow=all
+	allow=g729,alaw,ulaw
+	context=ramais_11
+	host=dynamic
+	dtmfmode=rfc2833
+	canreinvite=yes
+	nat=yes                                   
+	qualify=yes
+	callgroup=1
+	pickupgroup=1
+	call-limit=3
+	accountcode=NumeroRamal
+
+</i> Lembre-se de seguir a concatenação
+</p>
+
+<img src="../imagens/procedimentos-img/criar_userramal2.png" alt="Criar ramal2">
+
+<br>
+
+3. <p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>. Agora que o novo ramal já está criado, poderemos configura-lo no telefone VoIP.
+</p>
+
+<img src="../imagens/procedimentos-img/criar_userramal3.png" alt="Criar ramal3">
+
+<br>
 
 <h1 id="VoIPs">☎️ Configuração de VoIP</h1>
 
@@ -20,7 +78,7 @@
 
 <br>
 
-2. <p>No navegador, coloque o IP obtido e preencha o campo de login com os dados presentes no Keepass.
+2. <p>No navegador, coloque o IP obtido e preencha o campo de login com os dados armazenados no Keepass.
 </p>
 
 <img src="../imagens/procedimentos-img/config_tel1.png" alt="configuração voip1">
