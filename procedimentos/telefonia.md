@@ -67,7 +67,7 @@
 <p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>.
 </p>
 
-3. <p>Agora devemos editar mexer no arquivo <b>queues.conf</b> para inserir o novo ramal em um grupo. Para isso, rode o comando abaixo:
+3. <p>Agora devemos mexer no arquivo <b>queues.conf</b> para inserir o novo ramal em um grupo. Para isso, rode o comando abaixo:
     
 <i>
 	<b>nano queues.conf ou vi queues.conf </b>
