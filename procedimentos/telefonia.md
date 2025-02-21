@@ -12,7 +12,7 @@
 
 <!-- - <p style="font-size:20px"> <a href="#criartronco"> Criação de Tronco: Asterisk</a></p> -->
 - <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
-- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal: Asterisk</a></p>
+- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
 
 
@@ -26,7 +26,7 @@
 <br>
 
 
-<h1 id="criarramal">🖥 Criação Ramal: Asterisk</h1>
+<h1 id="criarramal">🖥 Criação Ramal e Inserção no Grupo: Asterisk</h1>
 
 1. <p>Dentro do PABX, vá até a pasta de configuração do Asterisk com o comando: <b style="color:white; background-color:black">cd /etc/asterisk</b>, após rode o comando: <b style="color:white; background-color:black">nano sip.conf</b> para editarmos o arquivo de configuração de Tronco/Ramais. (É possível também alterar o arquivo com o editor <b>VIM</b>)
 </p>
@@ -64,10 +64,30 @@
 
 <br>
 
-3. <p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>. Agora que o novo ramal já está criado, poderemos configura-lo no telefone VoIP.
+<p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>.
 </p>
 
-<img src="../imagens/procedimentos-img/criar_userramal3.png" alt="Criar ramal3">
+3. <p>Agora devemos editar mexer no arquivo <b>queues.conf</b> para inserir o novo ramal em um grupo. Para isso, rode o comando abaixo:
+    
+<i>
+	<b>nano queues.conf ou vi queues.conf </b>
+</i>
+
+</p>
+
+
+4. <p>Dentro do arquivo, podemos notar que todos os grupos de ramais da AEPH  estão localizados dentro deles. Então, localize o grupo que deseja inserir o ramal novo. Neste exemplo, vamos utilizar o grupo de ramais da ITO, então para fácil localização de grupos. Dê <b style="color:white; background-color:black">CTRL W e busque por 2089, por exemplo</b>. No grupo adicione o novo ramal e finalize com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>.
+
+</p>
+
+<img src="../imagens/procedimentos-img/add_ramalgp1.png" alt="Criar ramal4">
+
+
+<!-- 
+<i>
+	<b>service asterisk reload ou sudo asterisk -rx</b>
+</i>
+-->
 
 <br>
 
