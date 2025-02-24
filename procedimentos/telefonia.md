@@ -14,6 +14,7 @@
 - <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
+- <p style="font-size:20px"> <a href="#rebootasterisk"> Reboot: Asterisk</a></p>
 
 
 <h1 id="acessopabx">🖥 Acesso ao PABX: Asterisk</h1>
@@ -121,6 +122,43 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 
 <img src="../imagens/procedimentos-img/config_tel2.png" alt="configuração voip2">
 <img src="../imagens/procedimentos-img/config_tel3.png" alt="configuração voip3">
+
+<br>
+
+<h1 id="rebootasterisk">🖥 Reboot: Asterisk</h1>
+
+1. <p>Caso o PABX (Asterisk), começe a apresentar problemas de ligações ou a URA em inglês, devemos realizar o procedimento de reboot do serviço. Logado no servidor, rode o comando <b><i>rasterisk</i></b>, note que no exemplo abaixo, há dois erros de TIMEOUT de registro do servidor localizado na GTGI. Mas, pode ser que não seja retornado nenhuma mensagem de erro.
+</p>
+
+<img src="../imagens/procedimentos-img/reboot_asterisk1.png" alt="reboot PABX1">
+
+<br>
+
+2. <p>Rodando o comando, <b><i>sip show registry</i></b>, podemos notar também o erro de registro relatado no passo anterior.
+</p>
+
+<img src="../imagens/procedimentos-img/reboot_asterisk2.png" alt="reboot PABX2">
+
+<br>
+
+3. <p>Agora devemos parar o serviço do asterisk, então rode <b><i>core stop now</i></b>, para desabilitar o serviço de telefonia.
+</p>
+
+<img src="../imagens/procedimentos-img/reboot_asterisk3.png" alt="reboot PABX3">
+
+<br>
+
+4. <p><i>OPCIONAL</i> Para termos certeza que todas conexões do asterisk, foram encerradas, podemos derruba todas conexões via Mikrotik.<b><i>ATENÇÃO, O PROCEDIMENTO IRÁ DERRUBAR A CONEXÃO DE INTERNET DA AEPH POR ALGUNS INSTANTES, ENTÃO REALIZE ESSE PASSO A PASSO QUANDO TOTALMENTE NECESSÁRIO OU COM PERMISSÃO DE SEU SUPERIOR</i></b>. Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP: Firewall: Connections</b>, então dê um <b style="color:white; background-color:black">CTRL A</b> para selecionar todos os STATES e clique no sinal de <b style="color:white; background-color:black">- (pode variar na versão do winbox que esteja utilizando)</b>, repita esse processo duas vezes!
+</p>
+
+<img src="../imagens/procedimentos-img/reboot_asterisk4.png" alt="reboot PABX4">
+
+<br>
+
+5. <p>Voltando para o PABX, entre novamente na linha de comando do asterisk com o <b><i>rasterisk</i></b> e dê o <b><i>sip show registry</i></b>, já será possível identificar ambos hosts registrados e em funcionamento. Caso preferir, pode ficar nesta tela e ver os logs de ligações subindo.
+</p>
+
+<img src="../imagens/procedimentos-img/reboot_asterisk5.png" alt="reboot PABX5">
 
 <br>
 
