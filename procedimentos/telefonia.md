@@ -149,9 +149,9 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 <br>
 
 4. <p><i>(OPCIONAL)</i> Para termos certeza que todas conexões do asterisk, foram encerradas, podemos derrubar todas conexões via Mikrotik.<b><i> 
-ATENÇÃO, O PROCEDIMENTO IRÁ DERRUBAR A CONEXÃO DE INTERNET DA AEPH POR ALGUNS INSTANTES, ENTÃO REALIZE ESSE PASSO A PASSO QUANDO FOR TOTALMENTE NECESSÁRIO E COM PERMISSÃO DE SEU SUPERIOR</i></b>. 
+ATENÇÃO, O PROCEDIMENTO IRÁ DERRUBAR A CONEXÃO DE INTERNET DA AEPH POR ALGUNS INSTANTES, ENTÃO REALIZE ESSE PASSO QUANDO FOR TOTALMENTE NECESSÁRIO E COM PERMISSÃO DE SEU SUPERIOR</i></b>. 
 
-Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP: Firewall: Connections</b>, então dê um <b style="color:white; background-color:black">CTRL A</b> para selecionar todos os STATES e clique no sinal de <b style="color:white; background-color:black">- (pode variar na versão do winbox que esteja utilizando)</b>, repita esse processo duas vezes!
+Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP: Firewall: Connections</b>, então dê um <b style="color:white; background-color:black">CTRL A</b> para selecionar todos os STATES e clique no sinal de <b style="color:white; background-color:black">- (podendo ser <i>Remove</i>, dependendo da versão que está utilizando)</b>, repita esse processo duas vezes!
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk4.png" alt="reboot PABX4">

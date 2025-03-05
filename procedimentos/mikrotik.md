@@ -17,6 +17,7 @@
 - <p style="font-size:20px"> <a href="#regranatfw"> Criação de Regras: NAT e Firewall</a></p>
 - -  <p style="font-size:15px"> <a href="#criarnat"> Criação de Regra: NAT</a></p>
 - -  <p style="font-size:15px"> <a href="#criarfw"> Criação de Regra: Filter Rule (Firewall)</a></p>
+- -  <p style="font-size:15px"> <a href="#criarblock"> Criação de Regra: Bloqueio de sites (Firewall/Layer7)</a></p>
 
 
 
@@ -190,6 +191,26 @@
 
 
 <img src="../imagens/procedimentos-img/criar_regra1.png" alt="Cria regra1">
+
+<br>
+
+<h2 id="criarblock">🧱 Criação de Regra: Bloqueio de sites (Firewall/Layer7)</h2>
+
+1. <p>Para criar uma regra de bloqueios de sites, devemos criar uma Layer7, que servirá como uma lista que terá expressões regulares. Vá em <b style="color:white; background-color:black"> IP: Firewall: Layer7 Protocols: New</b>, para criarmos nossa lista. Preencha os campos de Nome e Descrição, agora dentro do <b style="color:white; background-color:black">Regexp</b>, coloque as expressões, conforme exemplo: <i><b style="color:black; background-color:white">^.+(expressao1|expressao2).*$</b></i>, após finalize com <b style="color:white; background-color:black">Apply, OK</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/criar_block1.png" alt="Cria block1">
+
+<img src="../imagens/procedimentos-img/criar_block2.png" alt="Cria block2">
+
+<br>
+
+2. <p>Agora vamos para <b style="color:white; background-color:black">Filter Rules, New</b>. Preencha os campos, conforme necessidade. Lembrando de colocar: <b style="color:white; background-color:black">Forward, IPdeOrigem, Protocolo TCP e no advanced a Layer7 que acabamos de criar.</b> Aplique e dê Ok.
+</p>
+
+
+<img src="../imagens/procedimentos-img/criar_block3.png" alt="Cria block3">
 
 <br>
 
