@@ -184,14 +184,14 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <h1 id="backupbird">📧 Exportação e Importação de Backup: E-mails (Thunderbird)</h1>
 
-1. <p>Com o Thunderbird aberto, clique com o botão direito em cima da pasta ou conta que deseja realizar o backup. Após, procure por <b style="color:white; background-color:black">ImportExportToolsNG</b> e deixe o mouse sobre. Agora vá em Exportação de Pasta (mbox), por fim clique em Com subpastas achatadas. Assim, será questionado qual será a pasta que será armazenado o backup em formato zip, Aguarde que o programa acabe o backup, o progresso pode ser acompanhado no inferior da tela.
-OBS: Se for selecionada a conta toda no backup, pode ser que algumas pastas não façam o backup, então as mesmas devem ser realizadas de maneira separada. 
+1. <p>Com o Thunderbird aberto, clique com o botão direito em cima da pasta ou conta que deseja realizar o backup. Após, procure por <b style="color:white; background-color:black">ImportExportToolsNG</b> e deixe o mouse sobre. Agora vá em <b style="color:white; background-color:black">Exportação de Pasta (mbox)</b>, por fim clique em <b style="color:white; background-color:black">Com subpastas achatadas</b>. Assim, será questionado qual será a pasta que será armazenado o backup em formato zip, Aguarde a finalização do backup, o progresso pode ser acompanhado no inferior da tela.
+OBS: Se for selecionada a conta toda no backup, pode ser que algumas pastas não façam o backup, então as mesmas devem ser realizadas de maneira isolada. 
 </p>
 <img src="../imagens/procedimentos-img/bkp_tb1.png" alt="Alteracao de email exemplo1">
 
 <br>
 
-2. <p> Para realizar a importação, vá até Pastas Locais ou outra pasta e clique com o botão direito sobre, após vá em <b style="color:white; background-color:black">ImportExportToolsNG</b>, selecione Importar arquivos mbox, após Todos os arquivos mbox do diretório. Assim será aberta uma janela para ir e selecionar a pasta que está localizado o backup, sendo que o mesmo deve estar fora do zip. Por fim, aguarde o thunderbird realizar o processo de importação, você pode acompanhar o progresso na barra que se encontra na parte debaixo da tela. 
+2. <p> Para realizar a importação, vá até Pastas Locais ou outra pasta e clique com o botão direito sobre, após vá em <b style="color:white; background-color:black">ImportExportToolsNG</b>, selecione <b style="color:white; background-color:black">Importar arquivos mbox</b>, após <b style="color:white; background-color:black">Todos os arquivos mbox do diretório</b>. Assim será aberta uma janela para ir e selecionar a pasta que está localizado o backup, sendo que o mesmo deve estar fora do zip. Por fim, aguarde o thunderbird realizar o processo de importação, você pode acompanhar o progresso na barra que se encontra na parte debaixo da tela. 
 </p>
 <img src="../imagens/procedimentos-img/bkp_tb2.png" alt="Alteracao de email exemplo1">
 
