@@ -16,6 +16,7 @@
 - <p style="font-size:20px"> <a href="#remocao"> Remoção de E-mail</a></p>
 - <p style="font-size:20px"> <a href="#backuphostgator"> Criação de Backup: E-mails (Hostgator)</a></p>
 - <p style="font-size:20px"> <a href="#limpezahostgator"> Limpeza de E-mail (Hostgator)</a></p>
+- <p style="font-size:20px"> <a href="#backupbird"> Exportação e Importação de Backup: E-mails (Thunderbird)</a></p>
 - - <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
 
 <h1 id="criacao">📧 Criação de E-mail</h1>
@@ -174,20 +175,34 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 <br>
 
-4. <p>Verifique novamente se está dentro do e-mail correto, após, veja a pasta que será efetuada a limpeza, neste caso será a de Inbox, continue clicando em: <b style="color:white; background-color:black">Manage</b>. Com isso, será mostrado algumas opções, então selecione a que desejar. Finalize o processo de limpeza com, <b style="color:white; background-color:black">Deletar Permanentemente</b> e será mostrado uma mensagem de ação executada com sucesso.. 
+4. <p>Verifique novamente se está dentro do e-mail correto, após, veja a pasta que será efetuada a limpeza, neste caso será a de Inbox, continue clicando em: <b style="color:white; background-color:black">Manage</b>. Com isso, será mostrado algumas opções, então selecione a que desejar. Finalize o processo de limpeza com, <b style="color:white; background-color:black">Deletar Permanentemente</b> e será mostrado uma mensagem de ação executada com sucesso.
 </p>
 <img src="../imagens/procedimentos-img/limpar_email3.png" alt="limpeza de  email3">
 <img src="../imagens/procedimentos-img/limpar_email4.png" alt="limpeza de  email4">
 
 <br>
 
+<h1 id="backupbird">📧 Exportação e Importação de Backup: E-mails (Thunderbird)</h1>
+
+1. <p>Com o Thunderbird aberto, clique com o botão direito em cima da pasta ou conta que deseja realizar o backup. Após, procure por <b style="color:white; background-color:black">ImportExportToolsNG</b> e deixe o mouse sobre. Agora vá em Exportação de Pasta (mbox), por fim clique em Com subpastas achatadas. Assim, será questionado qual será a pasta que será armazenado o backup em formato zip, Aguarde que o programa acabe o backup, o progresso pode ser acompanhado no inferior da tela.
+OBS: Se for selecionada a conta toda no backup, pode ser que algumas pastas não façam o backup, então as mesmas devem ser realizadas de maneira separada. 
+</p>
+<img src="../imagens/procedimentos-img/bkp_tb1.png" alt="Alteracao de email exemplo1">
+
+<br>
+
+2. <p> Para realizar a importação, vá até Pastas Locais ou outra pasta e clique com o botão direito sobre, após vá em <b style="color:white; background-color:black">ImportExportToolsNG</b>, selecione Importar arquivos mbox, após Todos os arquivos mbox do diretório. Assim será aberta uma janela para ir e selecionar a pasta que está localizado o backup, sendo que o mesmo deve estar fora do zip. Por fim, aguarde o thunderbird realizar o processo de importação, você pode acompanhar o progresso na barra que se encontra na parte debaixo da tela. 
+</p>
+<img src="../imagens/procedimentos-img/bkp_tb2.png" alt="Alteracao de email exemplo1">
+
+<br>
 
 <h1 id="extra">📧 Atividades Extras</h1>
 
 - <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>
- - <p style="font-size:20px"> <a href="#alteraremailenvio"> Alterar Conta Que Irá Enviar o E-mail no Outlook</a></p>
-<!--- <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>
-- <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>-->
+- <p style="font-size:20px"> <a href="#alteraremailenvio"> Alterar Conta Que Irá Enviar o E-mail no Outlook</a></p>
+- <p style="font-size:20px"> <a href="#addextensao"> Adicionar Extensão ImportExportToolsNG no Thunderbird</a></p>
+<!--- - <p style="font-size:20px"> <a href="#addemailoutlook"> Adicionar Outra Conta de E-mail no Outlook</a></p>-->
 
 <h2 id="addemailoutlook">📧 Adicionar Outra Conta de E-mail no Outlook</h2>
 
@@ -220,6 +235,20 @@ Para finalizar, clique em <b style="color:white; background-color:black">Criar</
 
 1.  <p> Para enviar o e-mail de um outlook, que tem mais de uma conta cadastrada. Vá em novo e-mail, clique onde está o e-mail de remetente que irá aparecer o outro e-mail.
 <img src="../imagens/procedimentos-img/add_email_pc_8.png" alt="adicionar outro outlook exemplo8">
+
+
+<br>
+
+<h2 id="addextensao">📧 Adicionar Extensão ImportExportToolsNG no Thunderbird</h2>
+
+1.  <p> Para adicionar o ImportExportToolsNG ou outra extensão no Thunderbird, clique na engrenagem no canto esquerdo inferior. Após, clique em Extensões e procure pelo nome da extensão e procure.
+<img src="../imagens/procedimentos-img/tb_export1.png" alt="adicionar extensao 1">
+
+
+<br>
+
+2.  <p> Será aberto uma nova aba com o resultado da pesquisa, após localizar a extensão em questão, clique em <b style="color:white; background-color:black">Adicionar no Thunderbird</b>.
+<img src="../imagens/procedimentos-img/tb_export2.png" alt="adicionar extensao 2">
 
 
 <br>
