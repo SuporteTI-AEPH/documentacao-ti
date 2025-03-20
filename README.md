@@ -21,6 +21,7 @@
 [BADGE4]: https://img.shields.io/badge/internet-000?style=for-the-badge&logo=html
 [BADGE5]: https://img.shields.io/badge/telefonia-000?style=for-the-badge&logo=html
 [BADGE6]: https://img.shields.io/badge/mikrotik-000?style=for-the-badge&logo=html
+[BADGE7]: https://img.shields.io/badge/Comandos_Úteis-000?style=for-the-badge&logo=html
 
 
 
@@ -30,6 +31,7 @@
 [![frontend-simple][BADGE4]](./procedimentos/internet.md)
 [![backend-simple][BADGE5]](./procedimentos/telefonia.md)
 [![frontend-simple][BADGE6]](./procedimentos/mikrotik.md)
+[![frontend-simple][BADGE7]](./procedimentos/comandos_uteis.md)
 
 
 </div>

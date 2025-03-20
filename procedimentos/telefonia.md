@@ -29,7 +29,26 @@
 
 <h1 id="criarramal">🖥 Criação Ramal e Inserção no Grupo: Asterisk</h1>
 
-1. <p>Dentro do PABX, vá até a pasta de configuração do Asterisk com o comando: <b style="color:white; background-color:black">cd /etc/asterisk</b>, após rode o comando: <b style="color:white; background-color:black">nano sip.conf</b> para editarmos o arquivo de configuração de Tronco/Ramais. (É possível também alterar o arquivo com o editor <b>VIM</b>)
+1. <p>Dentro do PABX, vá até a pasta de configuração do Asterisk com o comando: 
+<i>
+
+	cd /etc/asterisk
+</i> 
+
+Após rode o comando: 
+
+<i>
+
+	nano sip.conf
+</i> 
+
+ou
+
+<i>
+
+	vi sip.conf
+
+</i> Para editarmos o arquivo de configuração de Tronco/Ramais.
 </p>
 
 <img src="../imagens/procedimentos-img/criar_userramal1.png" alt="Criar ramal1">
@@ -65,19 +84,28 @@
 
 <br>
 
-<p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>.
+<p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou também com CTRL O: CTRL X</b>.
 </p>
 
 3. <p>Agora devemos mexer no arquivo <b>queues.conf</b> para inserir o novo ramal em um grupo. Para isso, rode o comando abaixo:
     
 <i>
-	<b>nano queues.conf ou vi queues.conf </b>
+	
+	nano queues.conf  
+</i>
+
+ou
+
+<i>
+
+	vi queues.conf
+
 </i>
 
 </p>
 
 
-4. <p>Dentro do arquivo, podemos notar que todos os grupos de ramais da AEPH  estão localizados dentro deles. Então, localize o grupo que deseja inserir o ramal novo. Neste exemplo, vamos utilizar o grupo de ramais da ITO, então para fácil localização de grupos. Dê <b style="color:white; background-color:black">CTRL W e busque por 2089, por exemplo</b>. No grupo adicione o novo ramal e finalize com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou apenas CTRL O: CTRL X</b>.
+4. <p>Dentro do arquivo, podemos notar que todos os grupos de ramais da AEPH  estão localizados dentro deles. Então, localize o grupo que deseja inserir o ramal novo. Neste exemplo, vamos utilizar o grupo de ramais da ITO, então para fácil localização de grupos. Dê <b style="color:white; background-color:black">CTRL W e busque por 2089, por exemplo</b>. No grupo adicione o novo ramal e finalize com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou também com CTRL O: CTRL X</b>.
 
 </p>
 
@@ -127,21 +155,31 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 
 <h1 id="rebootasterisk">🖥 Reboot: Asterisk (Resolução de Problemas)</h1>
 
-1. <p>Caso o PABX (Asterisk), começe a apresentar problemas de ligações ou a URA em inglês, devemos realizar o procedimento de reboot do serviço. Logado no servidor, rode o comando <b><i>rasterisk</i></b>, note que no exemplo abaixo, há dois erros de TIMEOUT de registro do servidor localizado na GTGI. Mas, pode ser que não seja retornado nenhuma mensagem de erro.
+1. <p>Caso o PABX (Asterisk), comece a apresentar problemas de ligações ou a URA em inglês, devemos realizar o procedimento de reboot do serviço. Logado no servidor, rode o comando <b><i>rasterisk</i></b>, note que no exemplo abaixo, há dois erros de TIMEOUT de registro do servidor localizado na GTGI. Mas, pode ser que não seja retornado nenhuma mensagem de erro.
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk1.png" alt="reboot PABX1">
 
 <br>
 
-2. <p>Rodando o comando, <b><i>sip show registry</i></b>, podemos notar também o erro de registro relatado no passo anterior.
+2. <p>Rodando o comando:
+<i>
+
+	sip show registry
+</i>
+Podemos notar também o erro de registro relatado no passo anterior.
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk2.png" alt="reboot PABX2">
 
 <br>
 
-3. <p>Agora devemos parar o serviço do asterisk, então rode <b><i>core stop now</i></b>, para desabilitar o serviço de telefonia.
+3. <p>Agora devemos parar o serviço do asterisk, então rode:
+<i>
+
+	core stop now
+</i>
+Para desabilitar o serviço de telefonia.
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk3.png" alt="reboot PABX3">
@@ -158,7 +196,7 @@ Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP
 
 <br>
 
-5. <p>Com o Asterisk parado, vamos inicia-lo com o seguinte comando:
+5. <p>Com o servidor de telefonia parado, vamos inicia-lo com o seguinte comando:
 
 <i>
 
@@ -167,7 +205,19 @@ Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP
 
 </p>
 
-6. <p>Com o serviço iniciado, volte para o PABX, entrando novamente na linha de comando do asterisk com o <b><i>rasterisk</i></b> e dê o <b><i>sip show registry</i></b>, assim já será possível identificar ambos hosts registrados e em funcionamento. Caso preferir, pode ficar nesta tela e ver os logs de ligações subindo.
+6. <p>Com o Asterisk iniciado, volte para a linha de comando do servidor com o comando:
+ <i>
+ 
+ 	rasterisk
+
+ </i>
+Após dê:
+<i>
+
+	sip show registry
+</i>
+
+Assim já será possível identificar ambos hosts registrados e em funcionamento. Caso preferir, pode ficar nesta tela e ver os logs de ligações subindo.
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk5.png" alt="reboot PABX5">
