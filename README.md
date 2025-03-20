@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="../README.md">
-        <img src="../imagens/aeph-logo.png" width="200px">
+    <a href="./README.md">
+        <img src="./imagens/aeph-logo.png" width="200px">
     </a>
 </p>
 
