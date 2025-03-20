@@ -158,15 +158,13 @@ Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP
 
 <br>
 
-5. <p>Inicie o serviço com o seguinte comando:
+5. <p>Com o Asterisk parado, vamos inicia-lo com o seguinte comando:
 
 <b><i>
-service asterisk start
+		service asterisk start
 </i></b>
 
 </p>
-
-<img src="../imagens/procedimentos-img/reboot_asterisk5.png" alt="reboot PABX5">
 
 <br>
 
