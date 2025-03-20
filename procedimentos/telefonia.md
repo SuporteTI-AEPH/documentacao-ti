@@ -160,13 +160,12 @@ Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP
 
 5. <p>Com o Asterisk parado, vamos inicia-lo com o seguinte comando:
 
-<b><i>
-		service asterisk start
-</i></b>
+<i>
+
+	service asterisk start
+</i>
 
 </p>
-
-<br>
 
 6. <p>Com o serviço iniciado, volte para o PABX, entrando novamente na linha de comando do asterisk com o <b><i>rasterisk</i></b> e dê o <b><i>sip show registry</i></b>, assim já será possível identificar ambos hosts registrados e em funcionamento. Caso preferir, pode ficar nesta tela e ver os logs de ligações subindo.
 </p>
