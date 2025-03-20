@@ -14,7 +14,7 @@
 - <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
-- <p style="font-size:20px"> <a href="#rebootasterisk"> Reboot: Asterisk</a></p>
+- <p style="font-size:20px"> <a href="#rebootasterisk"> Reboot: Asterisk (Resolução de Problemas)</a></p>
 
 
 <h1 id="acessopabx">🖥 Acesso ao PABX: Asterisk</h1>
@@ -125,7 +125,7 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 
 <br>
 
-<h1 id="rebootasterisk">🖥 Reboot: Asterisk</h1>
+<h1 id="rebootasterisk">🖥 Reboot: Asterisk (Resolução de Problemas)</h1>
 
 1. <p>Caso o PABX (Asterisk), começe a apresentar problemas de ligações ou a URA em inglês, devemos realizar o procedimento de reboot do serviço. Logado no servidor, rode o comando <b><i>rasterisk</i></b>, note que no exemplo abaixo, há dois erros de TIMEOUT de registro do servidor localizado na GTGI. Mas, pode ser que não seja retornado nenhuma mensagem de erro.
 </p>
@@ -158,7 +158,19 @@ Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP
 
 <br>
 
-5. <p>Voltando para o PABX, entre novamente na linha de comando do asterisk com o <b><i>rasterisk</i></b> e dê o <b><i>sip show registry</i></b>, assim já será possível identificar ambos hosts registrados e em funcionamento. Caso preferir, pode ficar nesta tela e ver os logs de ligações subindo.
+5. <p>Inicie o serviço com o seguinte comando:
+
+<b><i>
+service asterisk start
+</i></b>
+
+</p>
+
+<img src="../imagens/procedimentos-img/reboot_asterisk5.png" alt="reboot PABX5">
+
+<br>
+
+6. <p>Com o serviço iniciado, volte para o PABX, entrando novamente na linha de comando do asterisk com o <b><i>rasterisk</i></b> e dê o <b><i>sip show registry</i></b>, assim já será possível identificar ambos hosts registrados e em funcionamento. Caso preferir, pode ficar nesta tela e ver os logs de ligações subindo.
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk5.png" alt="reboot PABX5">
