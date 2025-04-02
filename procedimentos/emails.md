@@ -19,7 +19,7 @@
 - <p style="font-size:20px"> <a href="#backuphostgator"> Criação de Backup: E-mails (Hostgator)</a></p>
 - <p style="font-size:20px"> <a href="#limpezahostgator"> Limpeza de E-mail (Hostgator)</a></p>
 - <p style="font-size:20px"> <a href="#backupbird"> Exportação e Importação de Backup: E-mails (Thunderbird)</a></p>
-- <p style="font-size:20px"> <a href="#emailspam"> Trativas de SPAM (Hostgator)</a></p>
+- <p style="font-size:20px"> <a href="#emailspam"> Tratativas de SPAM (Hostgator)</a></p>
 - - <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
 
 <h1 id="criacao">📧 Criação de E-mail</h1>
@@ -200,7 +200,7 @@ OBS: Se for selecionada a conta toda no backup, pode ser que algumas pastas não
 
 <br>
 
-<h1 id="emailspam">📧 Trativas de SPAM (Hostgator) </h1>
+<h1 id="emailspam">📧 Tratativas de SPAM (Hostgator) </h1>
 
 - <p style="font-size:20px"> <a href="#spamfiltro"> Alterar Valor do Filtro de Spam</a></p>
 - <p style="font-size:20px"> <a href="#spamblacklist"> Adicionar E-mail na Blacklist</a></p>
