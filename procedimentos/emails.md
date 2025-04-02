@@ -19,6 +19,7 @@
 - <p style="font-size:20px"> <a href="#backuphostgator"> Criação de Backup: E-mails (Hostgator)</a></p>
 - <p style="font-size:20px"> <a href="#limpezahostgator"> Limpeza de E-mail (Hostgator)</a></p>
 - <p style="font-size:20px"> <a href="#backupbird"> Exportação e Importação de Backup: E-mails (Thunderbird)</a></p>
+- <p style="font-size:20px"> <a href="#emailspam"> Trativas de SPAM (Hostgator)</a></p>
 - - <p style="font-size:20px"> <a href="#extra"> Atividades Extras</a></p>
 
 <h1 id="criacao">📧 Criação de E-mail</h1>
@@ -196,6 +197,92 @@ OBS: Se for selecionada a conta toda no backup, pode ser que algumas pastas não
 2. <p> Para realizar a importação, vá até Pastas Locais ou outra pasta e clique com o botão direito sobre, após vá em <b style="color:white; background-color:black">ImportExportToolsNG</b>, selecione <b style="color:white; background-color:black">Importar arquivos mbox</b>, após <b style="color:white; background-color:black">Todos os arquivos mbox do diretório</b>. Assim será aberta uma janela para ir e selecionar a pasta que está localizado o backup, sendo que o mesmo deve estar fora do zip. Por fim, aguarde o thunderbird realizar o processo de importação, você pode acompanhar o progresso na barra que se encontra na parte debaixo da tela. 
 </p>
 <img src="../imagens/procedimentos-img/bkp_tb2.png" alt="Alteracao de email exemplo1">
+
+<br>
+
+<h1 id="emailspam">📧 Trativas de SPAM (Hostgator) </h1>
+
+- <p style="font-size:20px"> <a href="#spamfiltro"> Alterar Valor do Filtro de Spam</a></p>
+- <p style="font-size:20px"> <a href="#spamblacklist"> Adicionar E-mail na Blacklist</a></p>
+- <p style="font-size:20px"> <a href="#spamwhitelist"> Adicionar E-mail na Whitelist</a></p>
+
+
+<h2 id="spamfiltro">📧 Alterar Valor do Filtro de Spam</h2>
+
+1. <p>Acesse o <a href="https://sh-pro68.hostgator.com.br:2083/cpsess3949089252/frontend/paper_lantern/index.html?login=1&post_login=17936208941417">Hostgator</a> e efetue o login com os dados presentes no cofre de senhas (Keepass). 
+</p>
+
+
+<img src="../imagens/procedimentos-img/criar_email0.png" alt="Criacao de email exemplo0">
+
+<br>
+
+2. <p>Agora, localize a aba de <b style="color:white; background-color:black">Email</b>, após clique em <b style="color:white; background-color:black">Filtros de Spam</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam1.png" alt="spam 1">
+
+<br>
+
+3. <p>Dentro de Filtros de Spam, selecione <b style="color:white; background-color:black">Configure Spam Box Settings</b>, para podermos mudar o valor de filtragem.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam2.png" alt="spam 2">
+
+<br>
+
+4. <p>Dentro da Caixa de Spam, tenha certeza que a opção <b style="color:white; background-color:black">Spam Box is enabled</b> esteja marcada. Agora clique em <b style="color:white; background-color:black">Spam Threshold</b> para finalmente podermos mudar o valor de filtragem.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam3.png" alt="spam 3">
+
+<br>
+
+5. <p>Na pagína de <b style="color:white; background-color:black">Adjust Spam Threshold Score</b>, poderemos alterar o valor que o filtro de spam do Hostgator irá agir, sendo que o quanto <b>MENOR</b> o valor, mais Agressivo será essa filtragem. Então, escolha o valor que preferir, finalize clicando em <b style="color:white; background-color:black">Update Scoring Options, Return to "Overview"</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam4.png" alt="spam 4">
+
+    Pode ser que tenha falso-positivos, por exemplo, e-mail de fornecedor cair como SPAM. Então, para que possamos lidar com isso, devemos também realizar essa configuração manualmente. Sendo que Blacklist irá colocar o e-mail/domínio diretamente no SPAM, já Whitelist irá liberar o e-mail.
+
+<br>
+
+<h2 id="spamblacklist">📧 Adicionar E-mail na Blacklist</h2>
+
+1. <p>Clique em <b style="color:white; background-color:black">Show Additional Configurations</b>, note que temos três opções, porém, neste caso iremos clicar em <b style="color:white; background-color:black">Edit Spam Blacklist Settings</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam5.png" alt="spam 5">
+
+<br>
+
+2. <p>Nesta tela, clique em <b style="color:white; background-color:black">Add A New "blacklist_from" Item</b>, coloque o e-mail ou domínio inteiro, com auxílio do <b>*</b>, conforme imagem abaixo. E finalize clicando em <b style="color:white; background-color:black">Update Blacklist, Return to "Overview"</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam6.png" alt="spam 6">
+
+<br>
+
+<h2 id="spamwhitelist">📧 Adicionar E-mail na Whitelist</h2>
+
+1. <p>Clique em <b style="color:white; background-color:black">Show Additional Configurations</b>, note que temos três opções, porém, agor iremos clicar em <b style="color:white; background-color:black">Edit Spam Whitelist Settings</b>.
+</p>
+
+
+<img src="../imagens/procedimentos-img/spam7.png" alt="spam 7">
+
+<br>
+
+2. <p>Nesta tela, clique em <b style="color:white; background-color:black">Add A New "whitelist_from" Item</b>, coloque o e-mail ou domínio inteiro, com auxílio do <b>*</b>, conforme imagem abaixo. E finalize clicando em <b style="color:white; background-color:black">Update Whitelist, Return to "Overview"</b>.
+</p>
+
+<img src="../imagens/procedimentos-img/spam8.png" alt="spam 8">
 
 <br>
 
