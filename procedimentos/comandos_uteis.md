@@ -21,10 +21,10 @@
 <h1 id="nslookup">💻 Nslookup</h1>
 
 <p>Utilizamos o comando NSLOOKUP para verificar a resolução de DNS de um site, DDNs ou até mesmo um IP.
-<i>
+
 
 	nslookup DNS/IP
-</i>
+
 </p>
 
 <img src="../imagens/procedimentos-img/comandos1.png" alt="comandos1">
@@ -34,10 +34,10 @@
 <h1 id="ping">💻 Ping</h1>
 
 <p>Utilizamos o comando Ping para verificar a resposta e latência entre hosts internos ou externos. Podemos utilizar também para sites.
-<i>
+
 
 	ping DNS/IP
-</i>
+
 
 </p>
 
@@ -48,10 +48,10 @@
 <h1 id="tracert">💻 Tracert</h1>
 
 <p>Utilizamos o comando Tracert para verificar se há algum problema na rota com outro host. Podemos utilizar para IPs internos e externos, sendo possível também utilizar para DNS.
-<i>
+
 
 	tracert DNS/IP
-</i>
+
 
 </p>
 
@@ -62,10 +62,10 @@
 <h1 id="telnet">💻 Telnet</h1>
 
 <p>Utilizamos o comando Telnet para testar a conectividade com serviços na rede, podendo ser interno ou externo. (O comando deve estar habilitado na máquina, através da tela de recursos do Windows.)
-<i>
+
 
 	telnet DNS/IP PORTA
-</i>
+
 
 </p>
 

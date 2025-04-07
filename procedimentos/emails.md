@@ -247,7 +247,7 @@ OBS: Se for selecionada a conta toda no backup, pode ser que algumas pastas não
 
 <img src="../imagens/procedimentos-img/spam4.png" alt="spam 4">
 
-    Pode ser que tenha falso-positivos, por exemplo, e-mail de fornecedor cair como SPAM. Então, para que possamos lidar com isso, devemos também realizar essa configuração manualmente. Sendo que Blacklist irá colocar o e-mail/domínio diretamente no SPAM, já Whitelist irá liberar o e-mail.
+<p>Pode ser que tenha falso-positivos, por exemplo, e-mail de fornecedor cair como SPAM. Então, para que possamos lidar com isso, devemos também realizar essa configuração manualmente. Sendo que Blacklist irá colocar o e-mail/domínio diretamente no SPAM, já Whitelist irá liberar o e-mail.</p>
 
 <br>
 
