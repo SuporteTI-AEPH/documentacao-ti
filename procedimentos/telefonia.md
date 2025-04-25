@@ -238,7 +238,7 @@ Assim já será possível identificar ambos hosts registrados e em funcionamento
 
 
 
-	 cd /var/log/asterisk
+		cd /var/log/asterisk
 
 </p>
 
