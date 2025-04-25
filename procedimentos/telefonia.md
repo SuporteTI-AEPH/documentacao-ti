@@ -16,7 +16,7 @@
 - <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
-- <p style="font-size:20px"> <a href="#rebootasterisk"> Reboot: Asterisk (Resolução de Problemas)</a></p>
+- <p style="font-size:20px"> <a href="#resolucaoproblemas"> Resolução de Problemas</a></p>
 
 
 <h1 id="acessopabx">🖥 Acesso ao PABX: Asterisk</h1>
@@ -155,7 +155,13 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 
 <br>
 
-<h1 id="rebootasterisk">🖥 Reboot: Asterisk (Resolução de Problemas)</h1>
+<h1 id="resolucaoproblemas">🖥 Resolução de Problemas</h1>
+
+<p style="font-size:20px"> <a href="#rebootasterisk"> Reboot: Asterisk</a></p>
+<p style="font-size:20px"> <a href="#filesasterisk"> Too Many Open Files</a></p>
+
+
+<h2 id="rebootasterisk">🖥 Reboot: Asterisk</h2>
 
 1. <p>Caso o PABX (Asterisk), comece a apresentar problemas de ligações ou a URA em inglês, devemos realizar o procedimento de reboot do serviço. Logado no servidor, rode o comando <b><i>rasterisk</i></b>, note que no exemplo abaixo, há dois erros de TIMEOUT de registro do servidor localizado na GTGI. Mas, pode ser que não seja retornado nenhuma mensagem de erro.
 </p>
@@ -223,6 +229,72 @@ Assim já será possível identificar ambos hosts registrados e em funcionamento
 </p>
 
 <img src="../imagens/procedimentos-img/reboot_asterisk5.png" alt="reboot PABX5">
+
+<br>
+
+<h2 id="filesasterisk">🖥 Too Many Open Files</h2>
+
+1. <p>Caso o PABX (Asterisk), pare de funcionar é possível que este problema esteja relacionado ao limite de arquivos gerados. Então, para podermos confirmar se este é o problema, devemos análisar as linhas de Logs. Dentro da linha de comando do servidor, utilize o comando abaixo, para acessarmos a pasta de logs:
+
+
+
+	 cd /var/log/asterisk
+
+</p>
+
+<p>Agora podemos fazer a leitura do arquivos de logs <b style="color:white; background-color:black">messages.log</b>, para isso rode o comando abaixo:
+
+
+	cat messages
+
+</p>
+
+<p>Irá mostrar na tela os logs mais recentes do Asterisk, então espere chegar até o dia e horário que deseja, após pare o comando com <b style="color:white; background-color:black">Ctrl+C</b>. Note também que é possível utilizar o comando <b style="color:white; background-color:black">grep</b> para auxiliar na busca.
+
+
+	cat messages | grep -i 'TermoDeBusca'
+
+</p>
+
+<p>Desta maneira só irá listar o que tiver de acordo com o termo buscado.
+
+
+	cat messages | grep -iv 'TermoNãoDesejado'
+
+</p>
+
+<p>Assim irá mostrar tudo, exceto o termo informado.</p>
+
+<br>
+
+<p>Com a leitura e análise dos logs realizada, você deverá encontrar uma linha como a imagem abaixo:</p>
+
+<img src="../imagens/procedimentos-img/erro-files-pabx1.png" alt="files PABX1">
+
+<p> Conseguimos notar que de fato está ocorrendo uma criação excessiva de arquivos, impedindo o servidor de funcionar corretamente.
+<br>
+
+2. <p>Agora devemos editar o arquivo de configuração do pabx, o <b style="color:white; background-color:black">asterisk.conf</b>. Nele procure pela linha que contêm: <b style="color:white; background-color:black">maxfiles</b>. O valor por padrão será 100, mas no nosso caso queremos aumentar esse valor, então definaremos o valor que quisermos, neste caso iremos utilizar 10000.
+Então, para isso edite o arquivo de configuração com o seguinte comando:
+
+
+	nano asterisk.conf
+
+</p>
+
+<p> Após, salve o arquivo com <b style="color:white; background-color:black">Ctrl+O</b> e saia da edição do mesmo.</p>
+
+<img src="../imagens/procedimentos-img/erro-files-pabx2.png" alt="files PABX2">
+
+<br>
+
+3. <p> Para finalizar, reinicie o serviço de telefonia, com o comando abaixo:
+
+		service asterisk restart
+
+</p>
+
+<br>
 
 <br>
 
