@@ -149,8 +149,6 @@ Após definir a regra, não se esqueça de clicar em <b style="color:white; back
 
 <br>
 
-
-
 - <p style="font-size:20px"> <a href="#"> Voltar ao Topo</a></p>
 
 <br>
