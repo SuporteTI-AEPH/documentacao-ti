@@ -17,9 +17,9 @@
 
 
 
-<h1 id="instalacaovpn">⚗️ Instalação MultiWin</h1>
+<h1 id="instalacaomultiwin">⚗️ Instalação MultiWin</h1>
 
-1. <p>Para instalar o sistema da Silitex, vamos precisar do zip <b style="color:white; background-color:black">Instalação Multwin 3583</b>. O programa está localizado na seguinte pasta:
+1. <p>Para instalar o sistema da Silitex, vamos precisar do zip: <b style="color:white; background-color:black">Instalação Multwin 3583</b> que está localizado na seguinte pasta:
 
 
     \\\ad\Suporte TI\Silitex
@@ -65,7 +65,7 @@
 <h2 id="gerarnfesilitex">⚗️ Instalação Para Gerar NF-e</h2>
 
 
-1. <p> Para utilizar o sistema para gerar NF-e, será necessário do certificado da Silitex, que está armazenado tanto na pasta da rede ou no keepass.
+1. <p> Para utilizar o sistema para gerar NF-e, será necessário o uso do certificado da Silitex, que está armazenado tanto na pasta da rede ou no keepass.
 
 
 
@@ -76,7 +76,7 @@
 
 <br>
 
-2. <p> Com a senha e certificado em "mãos", será necessário ligar ao suporte do Multiwin, pois há algumas DLL que precisam ser instaladas para que seja possível gerar as NF-e. O telefone do suporte é o seguinte: <b style="color:white; background-color:black">(11) 4063-1884</b>
+2. <p> Com a senha e certificado em "mãos", será necessário ligar ao suporte do Multiwin, pois há algumas DLL que precisam ser instaladas para que seja possível gerar as NF-e. O telefone do suporte é o seguinte: <b style="color:white; background-color:black">(11) 4063-1884</b>.
 
 </p>
 
