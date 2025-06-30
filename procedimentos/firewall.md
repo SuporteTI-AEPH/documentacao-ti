@@ -33,29 +33,17 @@
 2. <p>Agora no lobby principal do firewall, é possível ver as seguintes informações:
 
     1 - Menu de Navegação
-
     2 - Barra de Pesquisa
-
     3 - Informações do Sistema
-
     4 - Uso da Memória RAM
-    
     5 - Uso do Disco 
-
     6 - Estatísticas da Interface 
-
     7 - Estatísticas das regras de Firewall 
-
     8 - Status dos Gateways de Internet
-
     9 - Status dos Serviços do Firewall
-
     10 - Gráfico de Trafego de Rede
-
     11 - Informações sobre a CPU
-
     12 - Avisos sobre o OPNSENSE
-    
     13 - Edição da dashboard
 
 OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do lobby, até excluir ou adicionar outras informações.
