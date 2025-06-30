@@ -14,9 +14,7 @@
 <h1 id="conteudo" style="font-size:35px;">📝 Conteúdo</h1>
 
 - <p style="font-size:20px"> <a href="#instalacaovpn"> Instalação VPN</a></p>
-- <p style="font-size:20px"> <a href="#ping"> ping</a></p>
-- <p style="font-size:20px"> <a href="#tracert"> tracert</a></p>
-- <p style="font-size:20px"> <a href="#telnet"> telnet</a></p>
+
 
 
 <h1 id="instalacaovpn">🔐 Instalação VPN</h1>
@@ -24,7 +22,7 @@
 1. <p>Iremos utilizar o programa <b style="color:white; background-color:black">OpenVPN-2.5.6-I601-amd64</b> para se conectar na VPN da AEPH. O programa estará localizado na seguinte pasta:
 
 
-    \\ad\Suporte TI\VPN
+    \\\ad\Suporte TI\Silitex
 
 </p>
 
@@ -33,7 +31,7 @@
 2. <p>Agora vamos ter que  enviar o arquivo de VPN para a pasta do OpenVPN GUI. Para isso copie o arquivo: <b style="color:white; background-color:black">AEPH_VPN.ovpn</b> que estará localizado na seguinte pasta:
 
 
-    \\ad\Suporte TI\VPN
+    \\\ad\Suporte TI\Silitex
 
 </p>
 
