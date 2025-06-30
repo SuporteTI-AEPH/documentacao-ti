@@ -32,19 +32,19 @@
 
 2. <p>Agora no lobby principal do firewall, é possível ver as seguintes informações:
 
-    1 - Menu de Navegação
-    2 - Barra de Pesquisa
-    3 - Informações do Sistema
-    4 - Uso da Memória RAM
-    5 - Uso do Disco 
-    6 - Estatísticas da Interface 
-    7 - Estatísticas das regras de Firewall 
-    8 - Status dos Gateways de Internet
-    9 - Status dos Serviços do Firewall
-    10 - Gráfico de Trafego de Rede
-    11 - Informações sobre a CPU
-    12 - Avisos sobre o OPNSENSE
-    13 - Edição da dashboard
+        1 - Menu de Navegação
+        2 - Barra de Pesquisa
+        3 - Informações do Sistema
+        4 - Uso da Memória RAM
+        5 - Uso do Disco 
+        6 - Estatísticas da Interface 
+        7 - Estatísticas das regras de Firewall 
+        8 - Status dos Gateways de Internet
+        9 - Status dos Serviços do Firewall
+        10 - Gráfico de Trafego de Rede
+        11 - Informações sobre a CPU
+        12 - Avisos sobre o OPNSENSE
+        13 - Edição da dashboard
 
 OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do lobby, até excluir ou adicionar outras informações.
 
@@ -58,18 +58,18 @@ OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do
 
 1. <p>Para acessar os Aliases do firewall, vá em:<b style="color:white; background-color:black"> Firewall --> Aliases</b>. Nesta tela, é possível identificar as seguintes informações:
 
-    3 - Barra de Pesquisa
-    4 - Filtragem por Tipo
-    5 - Aumentar a quantidade de Aliases Exibidos
-    6 - Alias Ativa ou Desativada
-    7 - Nome do Alias
-    8 - Tipo de Alias
-    9 - Descrição
-    10 - Comandos: Editar, Duplicar, Excluir
-    11 - Criar ou Deletar Alias
-    12 - Importar/Exportar Aliases
-    13 - Páginas
-    14 - Aplicar
+        3 - Barra de Pesquisa
+        4 - Filtragem por Tipo
+        5 - Aumentar a quantidade de Aliases Exibidos
+        6 - Alias Ativa ou Desativada
+        7 - Nome do Alias
+        8 - Tipo de Alias
+        9 - Descrição
+        10 - Comandos: Editar, Duplicar, Excluir
+        11 - Criar ou Deletar Alias
+        12 - Importar/Exportar Aliases
+        13 - Páginas
+        14 - Aplicar
 
 
 <img src="../imagens/procedimentos-img/fwaliases1.png" alt="aliases 1">
