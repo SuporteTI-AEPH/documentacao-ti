@@ -13,12 +13,14 @@
 - <p style="font-size:20px"> <a href="#acessofirewall"> Acesso e Visão Geral do Firewall</a></p>
 - <p style="font-size:20px"> <a href="#firewallaliases"> Firewall: Aliases - Criar, Alterar e Ler "Apelidos"</a></p>
 - <p style="font-size:20px"> <a href="#firewallrules"> Firewall: Rules - Criar, Alterar e Ler Regras</a></p>
+- <p style="font-size:20px"> <a href="#firewallliveview"> Firewall: Logs - Live View</a></p>
+- <p style="font-size:20px"> <a href="#firewallrotas"> Firewall: Routes - Criação de Rotas Estáticas</a></p>
 
 
 
 <h1 id="acessofirewall">🛡️ Acesso e Visão Geral do Firewall</h1>
 
-1. <p>Para acessar a Dashboard do appliance, coloque endereço abaixo no seu navegador e faça o login com as suas credenciais:
+1. <p>Para acessar a Dashboard do appliance, coloque o endereço abaixo no seu navegador e faça o login com as suas credenciais:
 
 
     https://10.0.0.1:8737
@@ -46,7 +48,7 @@
         12 - Avisos sobre o OPNSENSE
         13 - Edição da dashboard
 
-OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do lobby, até excluir ou adicionar outras informações.
+OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do lobby, até mesmo excluir ou adicionar outras informações.
 
 <img src="../imagens/procedimentos-img/firewall2.png" alt="firewall 2">
 
@@ -61,7 +63,7 @@ OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do
         3 - Barra de Pesquisa
         4 - Filtragem por Tipo
         5 - Aumentar a quantidade de Aliases Exibidos
-        6 - Alias Ativa ou Desativada
+        6 - Ativar/Desativar Alias
         7 - Nome do Alias
         8 - Tipo de Alias
         9 - Descrição
@@ -98,23 +100,23 @@ Após criar a regra, clique em <b style="color:white; background-color:black">Sa
 
 <h1 id="firewallrules">🛡️ Firewall: Rules - Criar, Alterar e Ler Regras</h1>
 
-1. <p>Para acessar as regras de firewall do appliance, vá em:<b style="color:white; background-color:black"> Firewall --> Rules --> Interface</b>. 
+1. <p>Para acessar as regras de firewall do appliance, vá em: <b style="color:white; background-color:black"> Firewall --> Rules --> Interface</b>. 
         Para rede Local utilizar LAN
         Para operadoras utilizar a interface própria de cada uma
 
 Nesta tela, é possível identificar as seguintes informações:
 
-    4 - Ativada/Desativada, Tipo de Regra, Sentido da Regra
-    5 - Protocolo Utilizado
-    6 - IP/Rede/Alias Origem
-    7 - Porta de Origem
-    8 - IP/Rede/Alias Destino
-    9 - Porta Destino
-    10 - Gateway de Saída
-    11 - Cronograma
-    12 - Descrição
-    13 - Comandos: Mover, Editar, Duplicar, Excluir
-    14 - Criar ou Deletar Regras
+        4 - Ativada/Desativada, Tipo de Regra, Sentido da Regra
+        5 - Protocolo Utilizado
+        6 - IP/Rede/Alias Origem
+        7 - Porta de Origem
+        8 - IP/Rede/Alias Destino
+        9 - Porta Destino
+        10 - Gateway de Saída
+        11 - Cronograma
+        12 - Descrição
+        13 - Comandos: Mover, Editar, Duplicar, Excluir
+        14 - Criar ou Deletar Regras
 
 
 <img src="../imagens/procedimentos-img/fwrules1.png" alt="rules 1">
@@ -148,6 +150,128 @@ Após definir a regra, não se esqueça de clicar em <b style="color:white; back
 </p>
 
 <br>
+
+
+<h1 id="firewallliveview">🛡️ Firewall: Logs - Live View</h1>
+
+
+<p>Os logs são uma parte fundamental de um firewall, com eles você consegue entender o que está acontecendo não só com o equipamento, mas também com a sua rede.
+
+<b style="color:white; background-color:black">"O Log fala com o analista!"</b>
+
+No caso dos logs de firewall, poderemos analisar o tráfego de rede. Portanto, poderemos identificar bloqueios ou saber se "X" pacote está chegando ao destino.
+
+1. <p>Para visualizar os logs em camada de firewall, vá em: <b style="color:white; background-color:black"> Firewall --> Log Files --> Live View</b>. Nesta tela de logs, conseguimos identificar os seguintes pontos:
+
+
+        4 - "Tema" para Filtragem
+        5 - Condição
+        6 - Ação/Valor
+        7 - Adicionar Filtro
+        8 - Atualização AoVivo de Logs / Resolver Hostnames
+        9 - Quantidade de Logs Exibida
+        10 - Interface
+        11 - Horário
+        12 - Origem - IP/Porta
+        13 - Destino - IP/Porta
+        14 - Protocolo
+        15 - Rótulo
+
+
+<img src="../imagens/procedimentos-img/fwlogslv1.png" alt="liveview 1">
+
+</p>
+
+<br>
+
+
+2. <p>Então, para começar a filtrar os logs de firewall, podemos usar usar o seguinte exemplo: <b style="color:white; background-color:black">Filtrar tudo que está passando pela Interface de rede local, ou seja, LAN</b>. Com isso em mente, vamos definir o filtro da seguinte maneira:
+
+        1 - "Tema" para Filtragem --> INTERFACE
+        2 - Condição --> CONTAINS
+        3 - Ação/Valor --> LAN
+
+Finalize com <b style="color:white; background-color:black">+ (Criar).</b> Você poderá notar que só será mostrado os logs que sejam da interface LAN. Caso a interface fosse VIVO, seria mostrado apenas informações da WAN (VIVO).
+
+<img src="../imagens/procedimentos-img/fwlogslv2.png" alt="liveview 2">
+
+</p>
+
+<br>
+
+
+3. <p>Agora, podemos pensar em outra condição <b style="color:white; background-color:black">Filtrar tudo da LAN e do IP 10.0.0.76.</b>. O termo de busca ficará assim:
+
+        1 - "Tema" para Filtragem --> src (origem)
+        2 - Condição --> is 
+        3 - Ação/Valor --> 10.0.0.76
+
+Realizando essa filtragem <b style="color:white; background-color:black">será mostrado tudo da LAN E do IP de final 76.</b> 
+
+<img src="../imagens/procedimentos-img/fwlogslv3.png" alt="liveview 3">
+
+Caso queira que a condição do filtro deixe de ser "E" para "OU", basta clicar em <b style="color:white; background-color:black">Select any of given criteria (or)</b>. Assim será retornado ambas condições, se for da LAN e se for do IP 10.0.0.76.
+
+
+<b style="color:white; background-color:black">Para retirar o filtro, basta clicar sobre o filtro que está no canto superior esquerdo em cinza.</b>
+
+</p>
+
+<br>
+
+
+<h1 id="firewallrotas">🛡️ Firewall: Routes - Criação de Rotas Estáticas</h1>
+
+<b style="color:white; background-color:black">Lembre-se ao criar uma rota estática, o acesso ao destino será feito exclusivamente pelo Gateway escolhido, ou seja, caso o GW escolhido venha ficar OFFLINE, o acesso não irá funcionar também, até que a rota seja desativada ou ajustada.</b>.
+
+1. <p>Para acessar as rotas, vá em: <b style="color:white; background-color:black">System: Routes: Configuration</b>. Nesta tela você poderá identificar os seguintes itens:
+
+        4 - Barra de Busca
+        5 - Aumentar a quantidade de Rotas Exibidas
+        6 - Ativar/Desativar Rotas
+        7 - Rede
+        8 - Gateway de Saída
+        9 - Descrição
+        10 - Comandos: Editar, Duplicar, Excluir
+        11 - Criar Rota
+        12 - Páginas
+
+
+
+<img src="../imagens/procedimentos-img/fwrota1.png" alt="rotas 1">
+
+</p>
+
+<br>
+
+
+2. <p>Para criar uma rota nova, clique em: <b style="color:white; background-color:black">+ (Criar)</b>. Após preencha os campos da seguinte maneira:
+
+        DISABLED - Ativar/Desativar Rota
+        NETWORK ADDRESS --> IP/RANGE de Destino
+        GATEWAY --> Link Que A Rota Saíra
+        DESCRIÇÃO --> Identificação da Rota
+
+
+Não se esqueça de dar um <b style="color:white; background-color:black">Apply</b>, para que a rota comece a funcionar.
+<img src="../imagens/procedimentos-img/fwrota2.png" alt="rotas 2">
+<img src="../imagens/procedimentos-img/fwrota3.png" alt="rotas 3">
+
+</p>
+
+<br>
+
+
+3. <p>Para validar o funcionamento da rota estática, podemos utiizar o comando <b style="color:white; background-color:black">tracert</b>. Como pode ver no exemplo abaixo, a rota até o site do G1 estava ocorrendo pelo link da VIVO, mas após criação da rota, começou a sair pelo link da CLARO.
+
+<img src="../imagens/procedimentos-img/fwrota4.png" alt="rotas 4">
+
+
+</p>
+
+<br>
+
+
 
 - <p style="font-size:20px"> <a href="#"> Voltar ao Topo</a></p>
 

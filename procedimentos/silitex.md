@@ -22,7 +22,7 @@
 1. <p>Para instalar o sistema da Silitex, vamos precisar do zip: <b style="color:white; background-color:black">Instalação Multwin 3583</b> que está localizado na seguinte pasta:
 
 
-    \\\ad\Suporte TI\Silitex
+        \\\ad\Suporte TI\Silitex
 
 
 <img src="../imagens/procedimentos-img/multiwin1.png" alt="install mw1">
@@ -69,7 +69,7 @@
 
 
 
-    \\\ad\Suporte TI\Silitex
+        \\\ad\Suporte TI\Silitex
 
 
 </p>
