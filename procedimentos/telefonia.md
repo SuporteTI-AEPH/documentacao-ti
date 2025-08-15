@@ -14,7 +14,7 @@
 
 <!-- - <p style="font-size:20px"> <a href="#criartronco"> Criação de Tronco: Asterisk</a></p> -->
 - <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
-- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk</a></p>
+- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk (DESATUALIZADO)</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
 - <p style="font-size:20px"> <a href="#resolucaoproblemas"> Resolução de Problemas</a></p>
 
@@ -29,7 +29,7 @@
 <br>
 
 
-<h1 id="criarramal">🖥 Criação Ramal e Inserção no Grupo: Asterisk</h1>
+<h1 id="criarramal">🖥 Criação Ramal e Inserção no Grupo: Asterisk (DESATUALIZADO)</h1>
 
 1. <p>Dentro do PABX, vá até a pasta de configuração do Asterisk com o comando: 
 <i>
