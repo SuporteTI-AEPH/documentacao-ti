@@ -43,7 +43,7 @@
 
 <br>
 
-<h1 id="acessopihole">🍓 Pihole: Visualização de Logs</h1>
+<h1 id="piholelogs">🍓 Pihole: Visualização de Logs</h1>
 
 1. <p>Clicando em <b style="color:white; background-color:black">Query Log</b>, você será redirecionado para os Logs de Acesso, com as seguintes informações na tela:
 
