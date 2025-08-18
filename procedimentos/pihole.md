@@ -79,7 +79,7 @@ Com isso, o Pihole irá trazer a informação solicitada, desde que tenha regist
 
 <h1 id="piholedisblock">🍓 Pihole - Disable Blocking: Desabilitar Bloqueio</h1>
 
-1. <p><b style="color:white; background-color:black">ATENÇÃO: ESSA OPÇÃO IRÁ DESABILITAR O BLOQUEIO DO SERVIÇO, OU SEJA, NÃO IRÁ DESATIVAR APENAS PARA UM GRUPO ESPECÍFICO.</b>
+1. <p><b style="color:white; background-color:black">ATENÇÃO: ESSA OPÇÃO IRÁ DESABILITAR O BLOQUEIO DE TODO O SERVIÇO, OU SEJA, NÃO IRÁ DESATIVAR APENAS PARA UM GRUPO ESPECÍFICO.</b>
 
 Para desativar os bloqueios, clique em <b style="color:white; background-color:black">Disable Blocking</b> no menu, após selecione o período de tempo desejado.
 

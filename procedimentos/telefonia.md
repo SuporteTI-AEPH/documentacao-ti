@@ -14,10 +14,17 @@
 
 <!-- - <p style="font-size:20px"> <a href="#criartronco"> Criação de Tronco: Asterisk</a></p> -->
 - <p style="font-size:20px"> <a href="#acessopabx"> Acesso ao PABX: Asterisk</a></p>
-- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal e Inserção no Grupo: Asterisk (DESATUALIZADO)</a></p>
+- <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal</a></p>
+- <p style="font-size:20px"> <a href="#gruporamais"> URA: Grupo De Ramais</a></p>
+- <p style="font-size:20px"> <a href="#discagem"> Configuração de Discagem Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
 - <p style="font-size:20px"> <a href="#resolucaoproblemas"> Resolução de Problemas</a></p>
 
+<br>
+
+		🖥📝 Qualquer arquivo de configuração pode ser editado no próprio terminal do servidor. Porém, se preferir, pode editar na sua máquina com o auxilio do filezilla para receber e enviar os arquivos.conf. Todos os arquivos de configuração, estão dentro da pasta /etc/asterisk📝🖥
+
+<br>
 
 <h1 id="acessopabx">🖥 Acesso ao PABX: Asterisk</h1>
 
@@ -29,28 +36,24 @@
 <br>
 
 
-<h1 id="criarramal">🖥 Criação Ramal e Inserção no Grupo: Asterisk (DESATUALIZADO)</h1>
+<h1 id="criarramal">🖥 Criação Ramal</h1>
 
 1. <p>Dentro do PABX, vá até a pasta de configuração do Asterisk com o comando: 
-<i>
 
-	cd /etc/asterisk
-</i> 
+		cd /etc/asterisk
+
 
 Após rode o comando: 
 
-<i>
-
-	nano sip.conf
-</i> 
+		nano sip.conf
+ 
 
 ou
 
-<i>
+		vi sip.conf
 
-	vi sip.conf
 
-</i> Para editarmos o arquivo de configuração de Tronco/Ramais.
+Para editarmos o arquivo de configuração de Tronco/Ramais.
 </p>
 
 <img src="../imagens/procedimentos-img/criar_userramal1.png" alt="Criar ramal1">
@@ -60,26 +63,26 @@ ou
 
 
 2. <p>No arquivo de configuração, adicione um novo ramal seguindo a configuração abaixo: 
-<i>
 
-	[NumeroRamal]
-	type=friend
-	username=NumeroRamal
-	secret=NumeroRamal
-	disallow=all
-	allow=g729,alaw,ulaw
-	context=ramais_11
-	host=dynamic
-	dtmfmode=rfc2833
-	canreinvite=yes
-	nat=yes                                   
-	qualify=yes
-	callgroup=1
-	pickupgroup=1
-	call-limit=3
-	accountcode=NumeroRamal
+		[NumeroRamal]
+		type=friend
+		username=NumeroRamal
+		secret=NumeroRamal
+		disallow=all
+		allow=g729,alaw,ulaw
+		context=ramais_11
+		host=dynamic
+		dtmfmode=rfc2833
+		canreinvite=yes
+		nat=yes                                   
+		qualify=yes
+		callgroup=1
+		pickupgroup=1
+		call-limit=3
+		accountcode=NumeroRamal
 
-</i> Lembre-se de seguir a concatenação
+ 
+Lembre-se de seguir a concatenação
 </p>
 
 <img src="../imagens/procedimentos-img/criar_userramal2.png" alt="Criar ramal2">
@@ -89,29 +92,22 @@ ou
 <p>Com o novo ramal inserido, devemos salvar as alterações no arquivo com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou também com CTRL O: CTRL X</b>.
 </p>
 
-3. <p>Agora devemos mexer no arquivo <b>queues.conf</b> para inserir o novo ramal em um grupo. Para isso, rode o comando abaixo:
-    
-<i>
-	
-	nano queues.conf  
-</i>
+<h1 id="gruporamais">🖥 URA: Grupo De Ramais</h1>
 
+1. <p>Para configurar quais ramais vão receber ligações externas redirecionadas pela URA, devemos mexer no arquivo <b style="color:white; background-color:black">queues.conf</b>. Para isso, rode o comando abaixo:
+    
+		nano queues.conf  
 ou
 
-<i>
-
-	vi queues.conf
-
-</i>
+		vi queues.conf
 
 </p>
 
-
-4. <p>Dentro do arquivo, podemos notar que todos os grupos de ramais da AEPH  estão localizados dentro deles. Então, localize o grupo que deseja inserir o ramal novo. Neste exemplo, vamos utilizar o grupo de ramais da ITO, então para fácil localização de grupos. Dê <b style="color:white; background-color:black">CTRL W e busque por 2089, por exemplo</b>. No grupo adicione o novo ramal e finalize com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou também com CTRL O: CTRL X</b>.
+2. <p>Dentro do arquivo, podemos notar que há um grupo para cada opção da URA, neste caso vamos adicionar um novo ramal na OPÇÃO 2 de Vendas. Então, dentro do grupo em questão adicione o novo ramal e finalize a edição com: <b style="color:white; background-color:black">CTRL X: S: CTRL X ou também com CTRL O: CTRL X</b>.
 
 </p>
 
-<img src="../imagens/procedimentos-img/add_ramalgp1.png" alt="Criar ramal4">
+<img src="../imagens/procedimentos-img/ura_grupo1.png" alt="Ura Grupo de Ramal 1">
 
 
 <!-- 
@@ -119,6 +115,39 @@ ou
 	<b>service asterisk reload ou sudo asterisk -rx</b>
 </i>
 -->
+
+<br>
+
+<h1 id="discagem">🖥 Configuração de Discagem Asterisk</h1>
+
+<p>Vamos editar o arquivo <b style="color:white; background-color:black">ext_interno.conf</b>, pois é ele o resposável por realizar a discagem (redirecionamento) das ligações externas ou internas.
+Então, vamos analisar alguns pontos de sua configuração e adicionar novas:
+</p>
+
+1. <p>
+		1 - 🔴:
+            Essa extensão é responsável pela discagem de todos os ramais, ou seja, desde do 1000 ao 9999, desde que estejam criados dentro do arquivo sip.conf.
+		2 - 🟢:
+			Essas duas extensões, são responsáveis pela efetuação das ligações da portaria da Expedição e do Recebimento. O porteiro Expedição, por padrão disca 94, o servidor recebe essa informação e faz o redirecionamento da ligação para os ramais designados nas linhas: same => n,Dial. O de Recebimento tem o mesmo comportamento, porém, sempre discará 95.
+
+</p>
+
+<img src="../imagens/procedimentos-img/discagem1.png" alt="Discagem 1">
+
+
+<br>
+
+
+2. <p>
+		1 - 🟢:
+            Essa extensão, faz o redirecionamento de ligações direcionadas ao ramal 2301. Portanto, ao discar para o 2301 irá direcionar a ligação não só ao ramal desejado, mas também para o 2302.
+		2 - 🔴:
+			Já essa extensão, tem o mesmo comportamento da anterior, mas desta vez está redirecionando tudo o que for para os ramais 9001 e 9002.
+
+</p>
+
+<img src="../imagens/procedimentos-img/discagem2.png" alt="Discagem 2">
+
 
 <br>
 
@@ -194,17 +223,7 @@ Para desabilitar o serviço de telefonia.
 
 <br>
 
-4. <p><i>(OPCIONAL)</i> Para termos certeza que todas conexões do asterisk, foram encerradas, podemos derrubar todas conexões via Mikrotik.<b><i> 
-ATENÇÃO, O PROCEDIMENTO IRÁ DERRUBAR A CONEXÃO DE INTERNET DA AEPH POR ALGUNS INSTANTES, ENTÃO REALIZE ESSE PASSO QUANDO FOR TOTALMENTE NECESSÁRIO E COM PERMISSÃO DE SEU SUPERIOR</i></b>. 
-
-Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP: Firewall: Connections</b>, então dê um <b style="color:white; background-color:black">CTRL A</b> para selecionar todos os STATES e clique no sinal de <b style="color:white; background-color:black">- (podendo ser <i>Remove</i>, dependendo da versão que está utilizando)</b>, repita esse processo duas vezes!
-</p>
-
-<img src="../imagens/procedimentos-img/reboot_asterisk4.png" alt="reboot PABX4">
-
-<br>
-
-5. <p>Com o servidor de telefonia parado, vamos inicia-lo com o seguinte comando:
+4. <p>Com o servidor de telefonia parado, vamos inicia-lo com o seguinte comando:
 
 <i>
 
@@ -213,7 +232,7 @@ Já logado no mikrotik, vá em <b style="color:white; background-color:black">IP
 
 </p>
 
-6. <p>Com o Asterisk iniciado, volte para a linha de comando do servidor com o comando:
+5. <p>Com o Asterisk iniciado, volte para a linha de comando do servidor com o comando:
  <i>
  
  	rasterisk
