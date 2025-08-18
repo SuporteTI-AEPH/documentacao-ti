@@ -125,10 +125,11 @@ Então, vamos analisar alguns pontos de sua configuração e adicionar novas:
 </p>
 
 1. <p>
-		1 - 🔴:
-            Essa extensão é responsável pela discagem de todos os ramais, ou seja, desde do 1000 ao 9999, desde que estejam criados dentro do arquivo sip.conf.
-		2 - 🟢:
-			Essas duas extensões, são responsáveis pela efetuação das ligações da portaria da Expedição e do Recebimento. O porteiro Expedição, por padrão disca 94, o servidor recebe essa informação e faz o redirecionamento da ligação para os ramais designados nas linhas: same => n,Dial. O de Recebimento tem o mesmo comportamento, porém, sempre discará 95.
+	🔴:
+        Essa extensão é responsável pela discagem de todos os ramais, ou seja, desde do 1000 ao 9999, desde que estejam criados dentro do arquivo sip.conf.
+			
+	🟢:
+		Essas duas extensões, são responsáveis pela efetuação das ligações da portaria da Expedição e do Recebimento. O porteiro Expedição, por padrão disca 94, o servidor recebe essa informação e faz o redirecionamento da ligação para os ramais designados nas linhas: same => n,Dial. O de Recebimento tem o mesmo comportamento, porém, sempre discará 95.
 
 </p>
 
@@ -139,10 +140,11 @@ Então, vamos analisar alguns pontos de sua configuração e adicionar novas:
 
 
 2. <p>
-		1 - 🟢:
-            Essa extensão, faz o redirecionamento de ligações direcionadas ao ramal 2301. Portanto, ao discar para o 2301 irá direcionar a ligação não só ao ramal desejado, mas também para o 2302.
-		2 - 🔴:
-			Já essa extensão, tem o mesmo comportamento da anterior, mas desta vez está redirecionando tudo o que for para os ramais 9001 e 9002.
+	🟢:
+        Essa extensão, faz o redirecionamento de ligações direcionadas ao ramal 2301. Portanto, ao discar para o 2301 irá direcionar a ligação não só ao ramal desejado, mas também para o 2302.
+
+	🔴:
+		Já essa extensão, tem o mesmo comportamento da anterior, mas desta vez está redirecionando tudo o que for para os ramais 9001 e 9002.
 
 </p>
 
