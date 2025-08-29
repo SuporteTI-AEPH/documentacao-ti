@@ -29,6 +29,7 @@
 [BADGE10]: https://img.shields.io/badge/VPN-000?style=for-the-badge&logo=html
 [BADGE11]: https://img.shields.io/badge/silitex-000?style=for-the-badge&logo=html
 [BADGE12]: https://img.shields.io/badge/prtg-000?style=for-the-badge&logo=html
+[BADGE13]: https://img.shields.io/badge/Rede_Interna-000?style=for-the-badge&logo=html
 
 
 [![backend-simple][BADGE1]](./procedimentos/emails.md)
@@ -43,6 +44,7 @@
 [![frontend-simple][BADGE10]](./procedimentos/vpn.md)
 [![frontend-simple][BADGE11]](./procedimentos/silitex.md)
 [![frontend-simple][BADGE12]](./procedimentos/prtg.md)
+[![frontend-simple][BADGE13]](./procedimentos/rede_interna.md)
 
 </div>
 

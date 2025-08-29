@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<b>Este projeto visa auxiliar o analista nas atividades relacionadas ao PRTG da AEPH do Brasil.</b>
+<b>Este projeto visa auxiliar o analista nas atividades relacionadas a Rede Interna da AEPH do Brasil.</b>
 </p>
 
 
