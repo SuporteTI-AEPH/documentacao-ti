@@ -74,7 +74,7 @@ No quadrante de número 4, está a listagem de usuários do AD.
 
 1. <p>Em <b style="color:white; background-color:black">Usuários e Computadores do Active Driectory</b>. Siga o seguinte caminho, para listar os grupos:
 
-	1 - aeph.com.br
+        1 - aeph.com.br
         2 - AEPH
         3 - Grupos
 
