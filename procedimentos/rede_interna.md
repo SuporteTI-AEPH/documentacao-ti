@@ -22,9 +22,9 @@
 
 1. <p>Acessando o AD, vá em <b style="color:white; background-color:black">Usuários e Computadores do Active Driectory</b>. Nesta tela de administração de usuários, grupos e computadores do AD, clique na seguinte ordem, para listar os usuários:
 
-	1 - aeph.com.br
-    2 - AEPH
-    3 - Usuários
+        1 - aeph.com.br
+        2 - AEPH
+        3 - Usuários
 
 No quadrante de número 4, está a listagem de usuários do AD.
 
@@ -75,8 +75,8 @@ No quadrante de número 4, está a listagem de usuários do AD.
 1. <p>Em <b style="color:white; background-color:black">Usuários e Computadores do Active Driectory</b>. Siga o seguinte caminho, para listar os grupos:
 
 	1 - aeph.com.br
-    2 - AEPH
-    3 - Grupos
+        2 - AEPH
+        3 - Grupos
 
 No quadrante de número 4, está a listagem de grupos do AD.
 
