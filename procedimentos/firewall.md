@@ -278,7 +278,7 @@ Não se esqueça de dar um <b style="color:white; background-color:black">Apply<
 
 1. <p>Para acessar os NATs, vá em: <b style="color:white; background-color:black">Firewall: NAT: Port Forward</b>. Nesta tela você poderá identificar os seguintes itens:</b>. 
 </p>
-        🔵
+
         4 - Ativada/Desativada, Tipo de Regra
         5 - Interface
         6 - Protocolo
@@ -321,7 +321,7 @@ Não se esqueça de Aplicar as Mudanças!
 
 1. <p>Para acessar os gateways, vá em: <b style="color:white; background-color:black">System: Gateways: Configuration</b>. Nesta tela você poderá identificar os seguintes itens:</b>. 
 </p>
-        🔵
+
         4 - Nome Gateway
         5 - Interface
         6 - Protocolo
