@@ -22,7 +22,7 @@
 1. <p>Iremos utilizar o programa <b style="color:white; background-color:black">OpenVPN</b> para se conectar na VPN da AEPH. O programa estará localizado na seguinte pasta:
 
 
-        \\ad\Suporte TI\Silitex
+        \\ad\Suporte TI\VPN
 
 
 Ou clique no seguinte link e faça o <a href="https://openvpn.net/community/">download</a> do programa.
@@ -34,7 +34,7 @@ Ou clique no seguinte link e faça o <a href="https://openvpn.net/community/">do
 2. <p>Agora vamos ter que  enviar o arquivo de VPN para a pasta do OpenVPN GUI. Para isso copie o arquivo: <b style="color:white; background-color:black">AEPH_VPN.ovpn</b> que estará localizado na seguinte pasta:
 
 
-        \\ad\Suporte TI\Silitex
+        \\ad\Suporte TI\VPN
 
 </p>
 

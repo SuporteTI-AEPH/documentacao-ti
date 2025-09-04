@@ -15,6 +15,9 @@
 - <p style="font-size:20px"> <a href="#firewallrules"> Firewall: Rules - Criar, Alterar e Ler Regras</a></p>
 - <p style="font-size:20px"> <a href="#firewallliveview"> Firewall: Logs - Live View</a></p>
 - <p style="font-size:20px"> <a href="#firewallrotas"> Firewall: Routes - Criação de Rotas Estáticas</a></p>
+- <p style="font-size:20px"> <a href="#firewallnats"> Firewall: NAT - Port Forward</a></p>
+- <p style="font-size:20px"> <a href="#firewwallgateway"> Gateway: Configuration - Criar, Alterar e Ler</a></p>
+- <p style="font-size:20px"> <a href="#firewwallgatewaygroup"> Gateway: Groups - Criar, Alterar e Ler</a></p>
 
 
 
@@ -271,7 +274,124 @@ Não se esqueça de dar um <b style="color:white; background-color:black">Apply<
 
 <br>
 
+<h1 id="firewallnats">🛡️ Firewall: NAT - Port Forward</h1>
 
+1. <p>Para acessar os NATs, vá em: <b style="color:white; background-color:black">Firewall: NAT: Port Forward</b>. Nesta tela você poderá identificar os seguintes itens:</b>. 
+</p>
+        🔵
+        4 - Ativada/Desativada, Tipo de Regra
+        5 - Interface
+        6 - Protocolo
+        7 - IP/Rede/Alias Origem
+        8 - Porta Origem
+        9 - IP Interface Destino
+        10 - Porta Destino
+        11 - IP Redirecionamento
+        12 - Porta Redirecionamento
+        13 - Descrição Regra
+        14 - Comandos: Criar, Mover, Editar, Duplicar, Excluir
+
+<img src="../imagens/procedimentos-img/fwnat01.png" alt="fwnat1">
+
+2. <p>Então clicando no + para criar um NAT, devemos preencher as seguintes informações:
+
+        1 - Interface Que Vai Receber o NAT
+        2 - Versão do TCP/IP
+        3 - Protocolo a ser utilizado
+        4 - Caso a origem seja sempre especifica, pode adicionar um ou mais IPs (alias)
+        5 - IP de interface
+        6 - Porta Destino
+        7 - IP Interno Que Vai Receber o Redirecionamento
+        8 - Porta Que Vai Receber o Redirecionamento
+        9 - Descrição
+        10 - Salve
+
+Não se esqueça de Aplicar as Mudanças!
+</p>
+
+<img src="../imagens/procedimentos-img/fwnat02.png" alt="fwnat2">
+<img src="../imagens/procedimentos-img/fwnat03.png" alt="fwnat3">
+<img src="../imagens/procedimentos-img/fwnat04.png" alt="fwnat4">
+<img src="../imagens/procedimentos-img/fwnat04.png" alt="fwnat5">
+
+
+<br>
+
+<h1 id="firewallgateway">🛡️ Gateway: Configuration - Criar, Alterar e Ler</h1>
+
+1. <p>Para acessar os gateways, vá em: <b style="color:white; background-color:black">System: Gateways: Configuration</b>. Nesta tela você poderá identificar os seguintes itens:</b>. 
+</p>
+        🔵
+        4 - Nome Gateway
+        5 - Interface
+        6 - Protocolo
+        7 - Prioridade
+        8 - IP do Gateway
+        9 - IP Monitor
+        10 - Latência de Rede
+        11 - Estabilidade de Rede
+        12 - Perda de Pacote
+        13 - Status
+        14 - Descrição
+        15 - Comandos: Criar, Mover, Editar, Duplicar, Excluir
+
+<img src="../imagens/procedimentos-img/fwgateway01.png" alt="gw01">
+
+
+<br>
+
+ 2. <p>Então clicando no + para criar um novo Gateway, devemos preencher as seguintes informações:
+
+        1 - Nome
+        2 - Descrição
+        3 - Interface
+        4 - Versão TCP/IP
+        5 - Caso seja IP estático, coloque-o aqui
+        6 - Definir como Link Principal
+        7 - Desativar Monitoramento do Link
+        8 - IP Monitor
+        9 - Definir Gateway como Offline
+        10 - Prioridade
+
+Após salvar, não se esqueça de Aplicar as Mudanças!
+</p>
+
+<img src="../imagens/procedimentos-img/fwgateway02.png" alt="gw02">
+
+<br>
+
+<h1 id="firewwallgatewaygroup">🛡️ Gateway: Groups - Criar, Alterar e Ler</h1>
+
+1. <p>Com os gateways devidamente criados, podemos associa-los em grupos, para isso acesse: <b style="color:white; background-color:black">System: Gateways: Configuration</b>. Nesta tela podemos identificar o seguinte:
+
+        1 - Nome Grupo
+        2 - Prioridade dos Gateways
+        3 - Descrição
+        4 - Comandos: Criar, Editar, Duplicar, Excluir
+
+<img src="../imagens/procedimentos-img/fwgateway03.png" alt="gw03">
+
+<br>
+
+2. <p>Então clicando no + para criar um novo Grupo, devemos preencher as seguintes informações:
+
+        1 - Nome
+        2 - Definir Prioridade (O Tier de Menor Valor Terá Prioridade)
+        3 - Gatilho de Ação
+        4 - Descrição
+        5 - Salvar
+
+Após salvar, não se esqueça de Aplicar as Mudanças!
+
+Um ponto importante é no gatilho de ação, o ideal é deixar como "Member Down", pois o chaveamento entre links só ocorrerá quando o link de Tier Menor ficar Offline. Caso o link tenha alta latência, poderá chavear o tempo todo e atrapalhar a navegação.
+
+<img src="../imagens/procedimentos-img/fwgateway04.png" alt="gw04">
+<img src="../imagens/procedimentos-img/fwgateway05.png" alt="gw05">
+
+Além disso, note que deixamos ambos como Tier 1, pois ao adicionar o grupo de gateway em uma regra, os dois serão utilizados ao mesmo tempo. Portanto, neste caso chamamos essa configuração de LoadBalance. A imagem da regra abaixo, é um exemplo.
+<img src="../imagens/procedimentos-img/fwgateway06.png" alt="gw06">
+
+<br>
 
 - <p style="font-size:20px"> <a href="#"> Voltar ao Topo</a></p>
 
