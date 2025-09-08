@@ -18,6 +18,7 @@
 - <p style="font-size:20px"> <a href="#gruporamais"> URA: Grupo De Ramais</a></p>
 - <p style="font-size:20px"> <a href="#discagem"> Configuração de Discagem Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
+- <p style="font-size:20px"> <a href="listaramais"> Listar Ramais</a></p>
 - <p style="font-size:20px"> <a href="#resolucaoproblemas"> Resolução de Problemas</a></p>
 
 <br>
@@ -185,6 +186,30 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 <img src="../imagens/procedimentos-img/config_tel3.png" alt="configuração voip3">
 
 <br>
+
+<h1 id="listaramais">🖥 Listar Ramais</h1>
+
+1. <p>Logado no Asterisk, rode o comando:
+
+		rasterisk 
+		
+Agora execute o comando:
+
+		sip show peers
+
+
+Será retornado uma lista com todos os ramais:
+
+		1 - Ramal
+		2 - IP do Telefone
+		3 - Status
+
+</p>
+
+<img src="../imagens/procedimentos-img/listar_ramais01.png" alt="Listar Ramais1">
+
+<br>
+
 
 <h1 id="resolucaoproblemas">🖥 Resolução de Problemas</h1>
 
