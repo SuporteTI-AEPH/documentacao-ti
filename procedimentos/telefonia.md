@@ -18,7 +18,7 @@
 - <p style="font-size:20px"> <a href="#gruporamais"> URA: Grupo De Ramais</a></p>
 - <p style="font-size:20px"> <a href="#discagem"> Configuração de Discagem Asterisk</a></p>
 - <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
-- <p style="font-size:20px"> <a href="listaramais"> Listar Ramais</a></p>
+- <p style="font-size:20px"> <a href="#listaramais"> Listar Ramais</a></p>
 - <p style="font-size:20px"> <a href="#resolucaoproblemas"> Resolução de Problemas</a></p>
 
 <br>
