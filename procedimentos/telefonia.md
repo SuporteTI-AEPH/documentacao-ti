@@ -17,7 +17,8 @@
 - <p style="font-size:20px"> <a href="#criarramal"> Criação Ramal</a></p>
 - <p style="font-size:20px"> <a href="#gruporamais"> URA: Grupo De Ramais</a></p>
 - <p style="font-size:20px"> <a href="#discagem"> Configuração de Discagem Asterisk</a></p>
-- <p style="font-size:20px"> <a href="#VoIPs"> Configuração VoIPs</a></p>
+- <p style="font-size:20px"> <a href="#audiocodes"> Configuração VoIP - AudioCodes (310HD)</a></p>
+- <p style="font-size:20px"> <a href="#siemens"> Configuração VoIP - Siemens (optiPoint 410)</a></p>
 - <p style="font-size:20px"> <a href="#listaramais"> Listar Ramais</a></p>
 - <p style="font-size:20px"> <a href="#resolucaoproblemas"> Resolução de Problemas</a></p>
 
@@ -154,7 +155,7 @@ Então, vamos analisar alguns pontos de sua configuração e adicionar novas:
 
 <br>
 
-<h1 id="VoIPs">☎️ Configuração de VoIP</h1>
+<h1 id="audiocodes">☎️ Configuração VoIP - AudioCodes (310HD)</h1>
 
 1. <p>No telefone, clique em MENU e procure por <b>STATUS</b>, dê <b>ENTER</b> e mais uma vez em <b>NETWORK STATUS</b>. Agora desça pelas informações até localizar o IP que o telefone recebeu e guarde essa informação, pois vamos precisar dela para realizar a configuração do ramal.
 </p>
@@ -184,6 +185,65 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 
 <img src="../imagens/procedimentos-img/config_tel2.png" alt="configuração voip2">
 <img src="../imagens/procedimentos-img/config_tel3.png" alt="configuração voip3">
+
+<br>
+
+<h1 id="siemens">☎️ Configuração VoIP - Siemens (optiPoint 410)</h1>
+
+1. <p>Antes de configurar o ramal no telefone, teremos que permitir o acesso do navegador a web do VoIP. Por se tratar um telefone com uma tecnologia antiga, os navegadores atuais não realizam esse tipo de acesso. Então, na barra de pesquisa do windows, busque e clique em <b style="color:white; background-color:black">Opções da Internet</b>.
+</p>
+
+<img src="../imagens/procedimentos-img/siemens1.png" alt="siemens1">
+
+<br>
+
+2. <p>Agora vá em <b style="color:white; background-color:black">Avançado</b> e marque os campos de: <b style="color:white; background-color:black">Usar TLS 1.0, Usar TLS 1,1 e Usar TLS 1.2</b>. Não se esqueça de aplicar e clicar no OK.
+</p>
+
+<img src="../imagens/procedimentos-img/siemens2.png" alt="siemens2">
+
+<br>
+
+3. <p>Para finalmente acessar a web do telefone, utilize o navegador <b style="color:white; background-color:black">Microsoft Edge</b>. Pois, o mesmo tem um modo legado do Internet Explorer. Então, utilize-o no modo compatibilidade com IE.
+
+Atenção para acessar a web do telefone, não se esqueça de colocar o:
+
+		https://IP_Telefone
+
+</p>
+
+<img src="../imagens/procedimentos-img/siemens3.png" alt="siemens3">
+<img src="../imagens/procedimentos-img/siemens4.png" alt="siemens4">
+
+<br>
+
+4. <p>Na tela inicial do telefone, clique em Administration e coloque a seguinte senha de admin:
+
+
+		123456
+
+</p>
+
+<img src="../imagens/procedimentos-img/siemens5.png" alt="siemens5">
+
+<br>
+
+5. <p>Na tela de admin, selecione <b style="color:white; background-color:black">SIP environment</b>:
+</p>
+
+<img src="../imagens/procedimentos-img/siemens8.png" alt="siemens6">
+
+<br>
+
+6. <p>Nas configurações de SIP, preencha os campos conforme instruções abaixo:
+
+OBS: Atente-se ao Phone Number, Phone Name, Display ID que vão ser diferente em cada telefone, o resto das informações será a mesma em cada telefone Siemens.
+</p>
+
+<img src="../imagens/procedimentos-img/siemens6.png" alt="siemens7">
+<img src="../imagens/procedimentos-img/siemens7.png" alt="siemens8">
+
+Não se esqueça de finalizar com <b style="color:white; background-color:black">Submit</b> e validar a realização e recebimento de ligações.
 
 <br>
 
