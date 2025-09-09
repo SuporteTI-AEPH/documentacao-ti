@@ -157,6 +157,8 @@ Então, vamos analisar alguns pontos de sua configuração e adicionar novas:
 
 <h1 id="audiocodes">☎️ Configuração VoIP - AudioCodes (310HD)</h1>
 
+<h4>ATENÇÃO: TODOS TELEFONES DEVEM TER SEU IP RESERVADO, DE ACORDO COM A FAIXA DE IP E COLOCADOS NA REGRA DO FIREWALL - Telefonia X LAN.</h4>
+
 1. <p>No telefone, clique em MENU e procure por <b>STATUS</b>, dê <b>ENTER</b> e mais uma vez em <b>NETWORK STATUS</b>. Agora desça pelas informações até localizar o IP que o telefone recebeu e guarde essa informação, pois vamos precisar dela para realizar a configuração do ramal.
 </p>
 
@@ -189,6 +191,8 @@ Após realizar as configurações, basta clicar em <b style="color:white; backgr
 <br>
 
 <h1 id="siemens">☎️ Configuração VoIP - Siemens (optiPoint 410)</h1>
+
+<h4>ATENÇÃO: TODOS TELEFONES DEVEM TER SEU IP RESERVADO, DE ACORDO COM A FAIXA DE IP E COLOCADOS NA REGRA DO FIREWALL - Telefonia X LAN.</h4>
 
 1. <p>Antes de configurar o ramal no telefone, teremos que permitir o acesso do navegador a web do VoIP. Por se tratar um telefone com uma tecnologia antiga, os navegadores atuais não realizam esse tipo de acesso. Então, na barra de pesquisa do windows, busque e clique em <b style="color:white; background-color:black">Opções da Internet</b>.
 </p>
