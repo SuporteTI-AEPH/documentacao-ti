@@ -11,6 +11,10 @@
 <h1 id="conteudo" style="font-size:35px;">📝 Conteúdo</h1>
 
 - <p style="font-size:20px"> <a href="#acessofirewall"> Acesso e Visão Geral do Firewall</a></p>
+- <p style="font-size:20px"> <a href="#fwuser"> Access: Users</a></p>
+- <p style="font-size:20px"> <a href="#fwgroup"> Access: Groups</a></p>
+- <p style="font-size:20px"> <a href="#fwdhcp"> DHCP</a></p>
+- <p style="font-size:20px"> <a href="#fwdhcpreserva"> DHCP: Reserva IP</a></p>
 - <p style="font-size:20px"> <a href="#firewallaliases"> Firewall: Aliases - Criar, Alterar e Ler "Apelidos"</a></p>
 - <p style="font-size:20px"> <a href="#firewallrules"> Firewall: Rules - Criar, Alterar e Ler Regras</a></p>
 - <p style="font-size:20px"> <a href="#firewallliveview"> Firewall: Logs - Live View</a></p>
@@ -54,6 +58,132 @@
 OBS: Com a edição da dashboard, é possível mudar a disposição dos itens do lobby, até mesmo excluir ou adicionar outras informações.
 
 <img src="../imagens/procedimentos-img/firewall2.png" alt="firewall 2">
+
+</p>
+
+<br>
+
+<h1 id="fwuser">🛡️ Access: Users</h1>
+
+1. <p>Para acessar os usuários do firewall e VPN, vá em:<b style="color:white; background-color:black"> System --> Access --> Users</b>. Nesta tela, é possível identificar as seguintes informações:
+
+        4 - Usuário
+        5 - Grupo Associado
+        6 - Nome Completo
+        7 - Barra de Pesquisa, Aumentar a quantidade de Usuários Exibidos
+        8 - Comandos: Adicionar, Editar, Duplicar, Excluir
+        9 - Páginas
+
+
+<img src="../imagens/procedimentos-img/fwaccessuser1.png" alt="access 1">
+
+<h2>NÃO DESATIVE, EXCLUA O USUÁRIO ROOT! E caso for alterar a senha, sempre faça com auxílio de outra pessoa, pois caso não dê certo o teste de acesso da outra pessoa, você ainda estará acessando o firewall e poderá corrigir a questão.</h2>
+
+<h4>OBS: O PROCESSO PARA CRIAR O USUÁRIO DE FIREWALL E VPN É O MESMO.</h4>
+</p>
+
+<br>
+
+2. <p>Clicando no + preencha as seguintes informações:
+
+        1 - Usuário / Senha
+        2 - Nome Completo / e-mail
+        3 - OPCIONAL - Desabilitar / Habilitar Usuário
+        4 - OPCIONAL - Definir Expiração de Usuário / Definir Grupo
+        5 - OPCIONAL - Definir Páginas Que Acessará no Firewall
+        6 - Salvar
+
+
+<img src="../imagens/procedimentos-img/fwaccessuser2.png" alt="access 2">
+<img src="../imagens/procedimentos-img/fwaccessuser3.png" alt="access 3">
+
+</p>
+
+<br>
+
+<h1 id="fwgroup">🛡️ Access: Groups</h1>
+
+1. <p>Para acessar os grupos do firewall e VPN, vá em:<b style="color:white; background-color:black"> System --> Access --> Groups</b>. Nesta tela, é possível identificar as seguintes informações:
+
+        4 - Nome do Grupo
+        5 - Páginas do Firewall Liberadas
+        6 - Membros
+        7 - Descrição
+        8 - Redes Permitidas
+        9 - Comandos: Adicionar, Editar, Excluir
+
+
+<img src="../imagens/procedimentos-img/fwaccessgroup1.png" alt="grupo 1">
+
+</p>
+
+<br>
+
+2. <p>Clicando no + preencha as seguintes informações:
+
+        1 - Nome do Grupo
+        2 - Descrição do Grupo
+        3 - Páginas Que os Usuários do Grupo Podem Acessar (Utilizar para grupos de acesso ao firewall)
+        4 - Membros do Grupo
+        5 - Salvar
+
+<img src="../imagens/procedimentos-img/fwaccessgroup2.png" alt="grupo 2">
+
+</p>
+
+<br>
+
+<h1 id="fwdhcp">🛡️ DHCP</h1>
+
+1. <p>Para acessar o serviço de DHCP do Firewall, vá em:<b style="color:white; background-color:black"> Services --> ISC DHCPv4 --> LAN</b>. Nesta tela, é possível identificar as seguintes informações:
+🟢:
+
+        4 - Serviço Ativado / Desativado
+        5 - Negar Dispositivos Não Cadastrados
+        6 - Sub-rede
+        7 - Máscara de Sub-rede
+        8 - Range Disponível
+        9 - Range Entregue pelo Serviço
+        10 - Pool Adicional de DHCP
+        11 - Servidores DNS
+        12 - Gateway
+        13 - Dominio
+        14 - Tempo Padrão de Lease (Em Segundos)
+        15 - Tempo Máximo de Lease (Em Segundos)
+
+🔴:
+
+        1 - ARP Estática
+        2 - Endereço MAC 
+        3 - Endereço IP
+        4 - Nome do Host
+        5 - Descrição
+        6 - Comandos: Adicionar, Editar, Excluir
+
+<img src="../imagens/procedimentos-img/fwdhcp1.png" alt="dhcp 1">
+<img src="../imagens/procedimentos-img/fwdhcp2.png" alt="dhcp 2">
+<img src="../imagens/procedimentos-img/fwdhcp3.png" alt="dhcp 3">
+
+</p>
+
+<br>
+
+2. <p>Clicando no + preencha as seguintes informações:
+
+        1 - Endereço MAC
+        2 - Endereço IP
+        3 - Nome do Host / Descrição
+        4 - OPCIONAL - Servidor DNS Primário
+        5 - OPCIONAL - Servidor DNS Secundário
+        6 - OPCIONAL - Gateway
+        7 - OPCIONAL - Dominio
+        8 - Salvar
+
+Após salvar, não esqueça de aplicar as configurações.
+
+<img src="../imagens/procedimentos-img/fwdhcp4.png" alt="grupo 4">
+<img src="../imagens/procedimentos-img/fwdhcp5.png" alt="grupo 5">
+<img src="../imagens/procedimentos-img/fwdhcp6.png" alt="grupo 6">
 
 </p>
 
