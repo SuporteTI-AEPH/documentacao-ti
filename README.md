@@ -35,7 +35,7 @@
 [![backend-simple][BADGE1]](./procedimentos/emails.md)
 [![frontend-simple][BADGE2]](./procedimentos/infraestrutura.md)
 [![backend-simple][BADGE3]](./procedimentos/atendimentos.md)
-[![frontend-simple][BADGE4]](./procedimentos/internet.md)
+<!-- [![frontend-simple][BADGE4]](./procedimentos/internet.md) -->
 [![backend-simple][BADGE5]](./procedimentos/telefonia.md)
 [![frontend-simple][BADGE6]](./procedimentos/mikrotik.md)
 [![frontend-simple][BADGE7]](./procedimentos/comandos_uteis.md)
@@ -43,7 +43,7 @@
 [![frontend-simple][BADGE9]](./procedimentos/pihole.md)
 [![frontend-simple][BADGE10]](./procedimentos/vpn.md)
 [![frontend-simple][BADGE11]](./procedimentos/silitex.md)
-[![frontend-simple][BADGE12]](./procedimentos/prtg.md)
+<!-- [![frontend-simple][BADGE12]](./procedimentos/prtg.md) -->
 [![frontend-simple][BADGE13]](./procedimentos/rede_interna.md)
 
 </div>
